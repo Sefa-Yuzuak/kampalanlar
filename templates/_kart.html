@@ -1,0 +1,11 @@
+{% macro kart(a) -%}
+<a class="kart" href="{{ a.url }}">
+  <span class="kart-ust">
+    <span class="tur-rozet">{{ a.tur_bilgi.ikon }} {{ a.tur_bilgi.ad }}</span>
+    {% if a.kamp_izni_resmi %}<span class="rozet kamp">⛺ Kamp izinli</span>{% endif %}
+  </span>
+  <strong>{{ a.ad }}</strong>
+  <span class="soluk kucuk">{{ a.il }}{% if a.hektar_yazi %} · {{ a.hektar_yazi }} ha{% endif %}{% if a.ilan_yili %} · {{ a.ilan_yili }}{% endif %}</span>
+  {% if a.rekreasyon %}<span class="kart-rek soluk kucuk">{{ a.rekreasyon[:90] }}{% if a.rekreasyon|length > 90 %}…{% endif %}</span>{% endif %}
+</a>
+{%- endmacro %}

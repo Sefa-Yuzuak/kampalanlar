@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ tam_baslik }}</title>
+<meta name="description" content="{{ meta_desc }}">
+<link rel="canonical" href="{{ site.url }}{{ canonical }}">
+{% block robots %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{% endblock %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.ad }}">
+<meta property="og:title" content="{{ baslik }}">
+<meta property="og:description" content="{{ meta_desc }}">
+<meta property="og:url" content="{{ site.url }}{{ canonical }}">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b5e3f">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/s.css">
+{% if site.gsc %}<meta name="google-site-verification" content="{{ site.gsc }}">{% endif %}
+{% if site.adsense %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense }}" crossorigin="anonymous"></script>{% endif %}
+{% for s in schema %}
+<script type="application/ld+json">{{ s|json|safe }}</script>
+{% endfor %}
+{% block head_ek %}{% endblock %}
+<!-- derleme: {{ site.derleme_zamani }} -->
+</head>
+<body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 3 4 27h24z" fill="#2e7d5b"/><path d="M16 11 9.5 24h13z" fill="#8fd6a8"/><circle cx="16" cy="24.5" r="2" fill="#1b5e3f"/></svg>
+      <span>Kamp<b>Alanları</b></span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç"><span></span></button>
+    <nav class="menu" id="ana-menu" aria-label="Ana menü">
+      <a href="/kamp-izinli/">⛺ Kamp izinli</a>
+      <a href="/il/">📍 İller</a>
+      {% for t in turler %}<a href="{{ t.slug_url }}">{{ t.ikon }} {{ t.cogul }}</a>{% endfor %}
+      <a href="/harita/">🗺 Harita</a>
+      {% if rehberler %}<a href="/rehber/">📘 Rehberler</a>{% endif %}
+    </nav>
+  </div>
+</header>
+
+{% if kirinti %}
+<nav class="kirinti kap" aria-label="Site yolu">
+  <a href="/">Ana sayfa</a>
+  {% for ad, yol in kirinti %}<span aria-hidden="true">›</span><a href="{{ yol }}">{{ ad }}</a>{% endfor %}
+</nav>
+{% endif %}
+
+<main id="icerik" class="kap">
+{% block icerik %}{% endblock %}
+</main>
+
+<footer class="alt">
+  <div class="kap">
+    <div class="alt-ust">
+      <div>
+        <p class="alt-ad">{{ site.ad }}</p>
+        <p class="soluk">{{ site.aciklama }}</p>
+        <p class="soluk kucuk">Veriler Tarım ve Orman Bakanlığı DKMP'nin resmî istatistiklerinden
+        derlenmiştir. Son veri güncellemesi: <strong>{{ site.veri_tarihi }}</strong>.</p>
+      </div>
+      <nav aria-label="Keşfet">
+        <p class="alt-baslik">Keşfet</p>
+        <a href="/kamp-izinli/">Resmî kamp izinli alanlar</a>
+        <a href="/il/">İllere göre</a>
+        <a href="/harita/">Harita</a>
+        {% for t in turler %}<a href="{{ t.slug_url }}">{{ t.cogul }}</a>{% endfor %}
+      </nav>
+      <nav aria-label="Site">
+        <p class="alt-baslik">Site</p>
+        <a href="/hakkinda/">Hakkında</a>
+        <a href="/kaynaklar/">Veri kaynakları</a>
+        <a href="/gizlilik/">Gizlilik ve çerezler</a>
+        <a href="/veri/korunan-alanlar.json">Açık veri (JSON)</a>
+      </nav>
+    </div>
+    <p class="alt-not">Bu site bağımsızdır; hiçbir kurumu temsil etmez ve rezervasyon almaz.
+    Kamp izinleri ve ücretler değişebilir; gitmeden önce ilgili alan müdürlüğünü arayın.
+    © {{ site.yil }} {{ site.ad }}</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var d = document.getElementById("menu-btn"), m = document.getElementById("ana-menu");
+  if (d && m) d.addEventListener("click", function () {
+    var acik = d.getAttribute("aria-expanded") === "true";
+    d.setAttribute("aria-expanded", String(!acik));
+    d.setAttribute("aria-label", acik ? "Menüyü aç" : "Menüyü kapat");
+    m.classList.toggle("acik", !acik);
+  });
+  document.querySelectorAll("[data-kopyala]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      navigator.clipboard.writeText(b.dataset.kopyala).then(function () {
+        var e = b.textContent; b.textContent = "Kopyalandı ✓";
+        setTimeout(function () { b.textContent = e; }, 1600);
+      });
+    });
+  });
+})();
+</script>
+{% block betik %}{% endblock %}
+</body>
+</html>

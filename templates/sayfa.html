@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block icerik %}
+<article class="rehber">
+  <header class="sayfa-bas"><h1>{{ p.baslik }}</h1></header>
+  {{ p.html|safe }}
+</article>
+{% endblock %}

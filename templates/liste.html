@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<section class="sayfa-bas">
+  <h1>{{ liste_basligi }}</h1>
+  {% if giris %}<p class="buyuk">{{ giris }}</p>{% endif %}
+  <p class="damga">Kaynak: DKMP Korunan Alan İstatistikleri 2025 · Son doğrulama: {{ site.veri_tarihi }}</p>
+</section>
+
+{% if liste %}
+<div class="sayac-satir">
+  <span class="sayac"><b>{{ liste|length }}</b> alan</span>
+  <span class="sayac kamp"><b>{{ liste|selectattr("kamp_izni_resmi")|list|length }}</b> resmî kamp izinli</span>
+</div>
+<div class="izgara">
+  {% for a in liste %}{{ kart(a) }}{% endfor %}
+</div>
+{% else %}
+<p class="bos">Bu listede henüz kayıt yok.</p>
+{% endif %}
+{% endblock %}

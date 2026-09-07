@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block icerik %}
+<article class="rehber" style="max-width:none">
+<header class="sayfa-bas">
+  <h1>{{ tarife.yil }} kamp ücretleri: resmî DKMP tarifesi</h1>
+  <p class="buyuk">Korunan alanlarda <strong>4 kişilik çadır</strong> için günlük yer kullanım
+  bedeli, bölge grubuna ve alanın kategorisine göre <strong>{{ en_az }} TL ile {{ en_cok }} TL</strong>
+  arasında değişiyor.</p>
+  <p class="damga">Kaynak: {{ tarife.kaynak.ad }} · Son doğrulama: {{ site.veri_tarihi }}</p>
+</header>
+
+<div class="kisa-cevap">
+  <h2>Kısa cevap</h2>
+  <p>DKMP'nin {{ tarife.yil }} tarifesinde Türkiye 21 bölge grubuna ayrılmış ve her alan
+  1., 2. veya 3. kategori olarak sınıflandırılmış. En yüksek tutar {{ en_cok }} TL
+  (Antalya, 1. kategori), en düşük tutar {{ en_az }} TL. Aşağıdaki tablo doğrudan resmî
+  PDF'ten çıkarılmıştır.</p>
+</div>
+
+<h2>Bölge grubuna göre günlük çadır ücreti</h2>
+<div class="tablo-kap">
+  <table class="veri-tablo">
+    <thead>
+      <tr>
+        <th scope="col">Bölge grubu</th>
+        <th scope="col">İller</th>
+        <th scope="col">1. kategori</th>
+        <th scope="col">2. kategori</th>
+        <th scope="col">3. kategori</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for g in tarife.gruplar %}
+      <tr>
+        <th scope="row">{{ g.grup }}</th>
+        <td class="kucuk">{{ g.iller|join(", ") }}</td>
+        <td><strong>{{ g.ucret["1. kategori"] }} ₺</strong></td>
+        <td>{{ g.ucret["2. kategori"] }} ₺</td>
+        <td>{{ g.ucret["3. kategori"] }} ₺</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2>Tarifeyi okurken</h2>
+<ul>
+{% for n in tarife.notlar %}<li>{{ n }}</li>{% endfor %}
+</ul>
+
+<div class="uyari">
+  <span aria-hidden="true">⚠</span>
+  <p>Bu tarife yalnızca <strong>DKMP'nin yönettiği korunan alanlardaki</strong> kamp alanları
+  için geçerlidir. Özel kamping işletmeleri ve belediye alanları kendi fiyatlarını belirler.
+  Ayrıca korunan alana araçla giriş, kişi girişi ve karavan için ayrı tarifeler bulunur;
+  tamamı <a href="{{ tarife.kaynak.url }}" rel="noopener" target="_blank">resmî tarife sayfasında</a> yayımlanır.</p>
+</div>
+
+{% if sss %}
+<section class="sss">
+  <h2>Sık sorulan sorular</h2>
+  {% for s in sss %}
+  <details{% if loop.first %} open{% endif %}><summary>{{ s.s }}</summary><p>{{ s.c }}</p></details>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section class="kaynakca">
+  <h2>Kaynak</h2>
+  <p>Tablodaki tutarlar <a href="{{ tarife.kaynak.url }}" rel="noopener" target="_blank">{{ tarife.kaynak.ad }}</a>
+  yayınından, PDF'in tablo hücreleri okunarak çıkarılmıştır. Elle kopyalanmamıştır.</p>
+  <p><a class="dugme" href="/kamp-izinli/">⛺ Resmî kamp izinli alanları gör</a></p>
+</section>
+</article>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<section class="hero">
+  <h1>Türkiye'de <span class="vurgu">resmen kamp izinli</span> korunan alanlar</h1>
+  <p class="buyuk">{{ toplam }} milli park, tabiat parkı ve tabiatı koruma alanının tamamı
+  Tarım ve Orman Bakanlığı DKMP'nin resmî istatistiklerinden derlendi.
+  <strong>{{ kamp_sayisi }} tanesinin</strong> resmî kaydında çadırlı kamp ya da karavan kullanımı geçiyor.</p>
+  <div class="hero-dugmeler">
+    <a class="dugme birincil" href="/kamp-izinli/">⛺ Kamp izinli {{ kamp_sayisi }} alanı gör</a>
+    <a class="dugme" href="/harita/">🗺 Haritada aç</a>
+  </div>
+  <p class="damga">Kaynak: DKMP Korunan Alan İstatistikleri 2025 · Son doğrulama: {{ site.veri_tarihi }}</p>
+</section>
+
+<section class="neden">
+  <h2>Bu site neden farklı?</h2>
+  <div class="izgara uc">
+    <div class="bilgi-kart">
+      <strong>Ham GPS koordinatı</strong>
+      <p class="soluk">Her alanın enlem-boylamı sayfada yazıyor ve tek tıkla kopyalanıyor.
+      Türkiye'deki kamp dizinlerinin neredeyse hiçbiri ham koordinat vermiyor, yalnızca yol tarifi bağlantısı koyuyor.</p>
+    </div>
+    <div class="bilgi-kart">
+      <strong>İzin durumu, tahmin değil kayıt</strong>
+      <p class="soluk">"Burada kamp yapılır mı" sorusunu bloglardan değil, DKMP'nin kendi
+      rekreasyon değeri sütunundan yanıtlıyoruz ve kaynağı gösteriyoruz.</p>
+    </div>
+    <div class="bilgi-kart">
+      <strong>Görünür doğrulama tarihi</strong>
+      <p class="soluk">Her sayfada verinin hangi tarihte doğrulandığı yazıyor.
+      Rakiplerin bir kısmının haritası 2017'den, içeriği 2019'dan kalma ve tarih hiç görünmüyor.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bolum">
+  <div class="bolum-bas">
+    <h2>⛺ Resmî kayıtta kamp geçen alanlar</h2>
+    <a class="hepsi" href="/kamp-izinli/">Tümü ({{ kamp_sayisi }}) ›</a>
+  </div>
+  <div class="izgara">{% for a in kamp_izinli %}{{ kart(a) }}{% endfor %}</div>
+</section>
+
+<section class="bolum">
+  <div class="bolum-bas"><h2>Türlere göre</h2></div>
+  <div class="izgara uc">
+    {% for t in turler %}
+    <a class="bilgi-kart bag" href="{{ t.slug_url }}">
+      <strong>{{ t.ikon }} {{ t.cogul }} ({{ t.alanlar|length }})</strong>
+      <p class="soluk">{{ t.aciklama }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="bolum">
+  <div class="bolum-bas">
+    <h2>İllere göre</h2>
+    <a class="hepsi" href="/il/">Tüm iller ›</a>
+  </div>
+  <div class="etiketler">
+    {% for il in iller %}<a class="etiket{% if il.kamp %} vurgu{% endif %}" href="{{ il.url }}">{{ il.ad }} <span class="soluk">{{ il.alanlar|length }}</span></a>{% endfor %}
+  </div>
+</section>
+
+{% if rehberler %}
+<section class="bolum">
+  <div class="bolum-bas">
+    <h2>Önce bunları okuyun</h2>
+    <a class="hepsi" href="/rehber/">Tüm rehberler ›</a>
+  </div>
+  <div class="izgara uc">
+    {% for r in rehberler[:3] %}
+    <a class="bilgi-kart bag" href="{{ r.url }}"><strong>{{ r.baslik }}</strong><p class="soluk">{{ r.ozet }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}

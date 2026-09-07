@@ -1,0 +1,307 @@
+{
+ "yil": 2026,
+ "birim": "4 kişilik çadır, günlük, TL",
+ "kaynak": {
+  "ad": "Tarım ve Orman Bakanlığı DKMP, Korunan Alanlar Ücret Tarifesi 2026 (EK-4 Çadır)",
+  "url": "https://www.tarimorman.gov.tr/DKMP/Menu/39/Korunan-Alanlar-Ucret-Tarifesi"
+ },
+ "notlar": [
+  "Tutarlar 4 kişilik çadır için günlük yer kullanım bedelidir.",
+  "Ortak kullanım bedeli (su, duş, çamaşırhane, bulaşıkhane, katı/sıvı atık) ayrıca alınabilir; çadır/karavan ünite başı günlük tarifeyi geçemez ve ilgili Bölge Müdürlüğünce çıkarılacak Olur ile belirlenir.",
+  "Elektrik tüketimi ve ısınma giderleri ortak kullanım bedeline dahil değildir.",
+  "Kategori, alanın DKMP tarafından belirlenen sınıfıdır; aynı ilde farklı kategoride alan bulunabilir. Alanın kategorisi için EK-1 listesine bakın."
+ ],
+ "gruplar": [
+  {
+   "grup": "AKDENİZ-1",
+   "iller": [
+    "Antalya"
+   ],
+   "ucret": {
+    "1. kategori": 570,
+    "2. kategori": 450,
+    "3. kategori": 390
+   }
+  },
+  {
+   "grup": "AKDENİZ-2",
+   "iller": [
+    "Adana",
+    "Hatay",
+    "Isparta",
+    "Mersin",
+    "Osmaniye"
+   ],
+   "ucret": {
+    "1. kategori": 390,
+    "2. kategori": 330,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "AKDENİZ-3",
+   "iller": [
+    "Burdur",
+    "Kahramanmaraş"
+   ],
+   "ucret": {
+    "1. kategori": 390,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "EGE-1",
+   "iller": [
+    "Muğla",
+    "İzmir"
+   ],
+   "ucret": {
+    "1. kategori": 510,
+    "2. kategori": 450,
+    "3. kategori": 270
+   }
+  },
+  {
+   "grup": "EGE-2",
+   "iller": [
+    "Aydın",
+    "Manisa"
+   ],
+   "ucret": {
+    "1. kategori": 450,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "EGE-3",
+   "iller": [
+    "Afyonkarahisar",
+    "Denizli",
+    "Kütahya",
+    "Uşak"
+   ],
+   "ucret": {
+    "1. kategori": 390,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "MARMARA-1",
+   "iller": [
+    "Edirne"
+   ],
+   "ucret": {
+    "1. kategori": 510,
+    "2. kategori": 390,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "MARMARA-2",
+   "iller": [
+    "Balıkesir",
+    "Bursa",
+    "Kırklareli",
+    "İstanbul"
+   ],
+   "ucret": {
+    "1. kategori": 450,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "MARMARA-3",
+   "iller": [
+    "Bilecik",
+    "Kocaeli",
+    "Sakarya",
+    "Tekirdağ",
+    "Yalova",
+    "Çanakkale"
+   ],
+   "ucret": {
+    "1. kategori": 390,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "İÇ ANADOLU-1",
+   "iller": [
+    "Ankara"
+   ],
+   "ucret": {
+    "1. kategori": 450,
+    "2. kategori": 390,
+    "3. kategori": 270
+   }
+  },
+  {
+   "grup": "İÇ ANADOLU-2",
+   "iller": [
+    "Eskişehir",
+    "Kayseri",
+    "Konya",
+    "Sivas",
+    "Yozgat"
+   ],
+   "ucret": {
+    "1. kategori": 450,
+    "2. kategori": 330,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "İÇ ANADOLU-3",
+   "iller": [
+    "Aksaray",
+    "Karaman",
+    "Kırıkkale",
+    "Kırşehir",
+    "Nevşehir",
+    "Niğde",
+    "Çankırı"
+   ],
+   "ucret": {
+    "1. kategori": 330,
+    "2. kategori": 270,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "KARADENİZ-1",
+   "iller": [
+    "Bolu"
+   ],
+   "ucret": {
+    "1. kategori": 450,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "KARADENİZ-2",
+   "iller": [
+    "Amasya",
+    "Artvin",
+    "Bartın",
+    "Düzce",
+    "Giresun",
+    "Gümüşhane",
+    "Kastamonu",
+    "Ordu",
+    "Rize",
+    "Samsun",
+    "Sinop",
+    "Tokat",
+    "Trabzon",
+    "Zonguldak",
+    "Çorum"
+   ],
+   "ucret": {
+    "1. kategori": 390,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "KARADENİZ-3",
+   "iller": [
+    "Bayburt",
+    "Karabük"
+   ],
+   "ucret": {
+    "1. kategori": 390,
+    "2. kategori": 300,
+    "3. kategori": 210
+   }
+  },
+  {
+   "grup": "DOĞU ANADOLU-1",
+   "iller": [
+    "Elazığ",
+    "Erzincan",
+    "Erzurum",
+    "Malatya",
+    "Tunceli"
+   ],
+   "ucret": {
+    "1. kategori": 330,
+    "2. kategori": 270,
+    "3. kategori": 150
+   }
+  },
+  {
+   "grup": "DOĞU ANADOLU-2",
+   "iller": [
+    "Bingöl",
+    "Bitlis",
+    "Hakkari",
+    "Kars",
+    "Muş",
+    "Van"
+   ],
+   "ucret": {
+    "1. kategori": 330,
+    "2. kategori": 210,
+    "3. kategori": 150
+   }
+  },
+  {
+   "grup": "DOĞU ANADOLU-3",
+   "iller": [
+    "Ardahan",
+    "Ağrı",
+    "Iğdır"
+   ],
+   "ucret": {
+    "1. kategori": 270,
+    "2. kategori": 210,
+    "3. kategori": 150
+   }
+  },
+  {
+   "grup": "GÜNEYDOĞU-1",
+   "iller": [
+    "Adıyaman",
+    "Diyarbakır",
+    "Gaziantep",
+    "Şanlıurfa"
+   ],
+   "ucret": {
+    "1. kategori": 300,
+    "2. kategori": 240,
+    "3. kategori": 150
+   }
+  },
+  {
+   "grup": "GÜNEYDOĞU-2",
+   "iller": [
+    "Batman",
+    "Kilis",
+    "Siirt"
+   ],
+   "ucret": {
+    "1. kategori": 330,
+    "2. kategori": 210,
+    "3. kategori": 150
+   }
+  },
+  {
+   "grup": "GÜNEYDOĞU-3",
+   "iller": [
+    "Mardin",
+    "Şırnak"
+   ],
+   "ucret": {
+    "1. kategori": 270,
+    "2. kategori": 210,
+    "3. kategori": 150
+   }
+  }
+ ]
+}

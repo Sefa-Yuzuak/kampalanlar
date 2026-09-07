@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block icerik %}
+<section class="sayfa-bas">
+  <h1>🗺 Kamp alanları haritası</h1>
+  <p class="buyuk">Koordinatı doğrulanmış {{ noktalar|length }} korunan alan.
+  Resmî kaydında kamp geçen alanlar <span class="rozet kamp">⛺ yeşil</span> işaretlidir.</p>
+  <form class="filtre" id="harita-filtre">
+    <label class="secim">
+      <input type="checkbox" id="sadece-kamp"> Yalnızca kamp izinli ({{ kamp_sayisi }})
+    </label>
+    <select id="tur-filtre" aria-label="Türe göre süz">
+      <option value="">Tür: hepsi</option>
+      {% for t in turler %}<option value="{{ t.slug }}">{{ t.ikon }} {{ t.cogul }}</option>{% endfor %}
+    </select>
+    <button class="dugme" type="button" id="konum">📍 Bana yakın</button>
+  </form>
+  <p class="damga">Kaynak: DKMP Korunan Alan İstatistikleri 2025 · Son doğrulama: {{ site.veri_tarihi }}</p>
+</section>
+
+<div id="buyuk-harita" class="harita-kutu" role="application" aria-label="Korunan alanlar haritası"></div>
+<noscript><p class="bos">Harita için JavaScript gerekiyor.
+<a href="/il/">İllere göre listeye</a> ya da <a href="/kamp-izinli/">kamp izinli alanlara</a> geçebilirsiniz.</p></noscript>
+
+<section class="bolum">
+  <h2>Haritayı kullanmadan</h2>
+  <p>Tüm alanların ham verisi <a href="/veri/korunan-alanlar.json">açık JSON</a> olarak indirilebilir;
+  koordinat, il, alan ve kamp izni durumu bu dosyada yer alır.</p>
+</section>
+{% endblock %}
+
+{% block head_ek %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+{% endblock %}
+
+{% block betik %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="/static/harita.js" defer></script>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block icerik %}
+<section class="sayfa-bas">
+  <h1>İllere göre korunan alanlar ve kamp yerleri</h1>
+  <p class="buyuk">{{ iller|length }} il ve il grubunda toplam {{ toplam }} korunan alan;
+  {{ kamp_sayisi }} tanesinin resmî kaydında kamp geçiyor.</p>
+  <p class="damga">Kaynak: DKMP Korunan Alan İstatistikleri 2025 · Son doğrulama: {{ site.veri_tarihi }}</p>
+</section>
+
+<div class="tablo-kap">
+<table class="veri-tablo">
+  <thead><tr><th scope="col">İl</th><th scope="col">Korunan alan</th><th scope="col">Kamp izinli</th></tr></thead>
+  <tbody>
+  {% for il in iller %}
+    <tr>
+      <th scope="row"><a href="{{ il.url }}">{{ il.ad }}</a></th>
+      <td>{{ il.alanlar|length }}</td>
+      <td>{% if il.kamp %}<span class="rozet kamp">⛺ {{ il.kamp }}</span>{% else %}<span class="soluk">—</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

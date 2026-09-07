@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% from "_kart.html" import kart %}
+{% block icerik %}
+<article class="alan">
+
+<header class="alan-bas">
+  <span class="tur-rozet">{{ a.tur_bilgi.ikon }} {{ a.tur_bilgi.ad }}</span>
+  <h1>{{ a.ad }}</h1>
+  <p class="soluk">{{ a.il }}{% if a.bolge_mudurlugu %} · {{ a.bolge_mudurlugu }}. Bölge Müdürlüğü{% endif %}</p>
+</header>
+
+{# ---- Sitenin ayrışma noktası: izin durumu, en üstte, kaynağıyla ---- #}
+{% if a.kamp_izni_resmi %}
+<div class="durum izinli">
+  <span class="durum-ikon" aria-hidden="true">⛺</span>
+  <div>
+    <strong>Bu alanda kamp, resmî kayıtta belirtiliyor.</strong>
+    <p>DKMP'nin 2025 korunan alan istatistiklerinde bu alanın rekreasyon değeri arasında
+    <em>{{ a.rekreasyon }}</em> geçiyor. Kamp yalnızca <strong>idarece belirlenen alanlarda</strong> ve
+    <a href="/rehber/kamp-ucretleri-2026/">resmî ücret tarifesine</a> göre yapılabilir.</p>
+  </div>
+</div>
+{% else %}
+<div class="durum belirsiz">
+  <span class="durum-ikon" aria-hidden="true">⚠</span>
+  <div>
+    <strong>Resmî kayıtta bu alan için kamp belirtilmiyor.</strong>
+    <p>DKMP'nin 2025 kayıtlarında bu alanın rekreasyon değerleri arasında çadırlı kamp geçmiyor.
+    6831 sayılı Orman Kanunu m.76/a, idarece belirlenen konak yerleri dışında gecelemeyi yasaklıyor
+    (<a href="/rehber/ormanda-kamp-yasak-mi/">2026 cezası ve ayrıntısı</a>).
+    Çadır kurmadan önce alan müdürlüğünden teyit alın.</p>
+  </div>
+</div>
+{% endif %}
+
+<section class="kunye">
+  <h2>Künye</h2>
+  <dl>
+    <div><dt>Tür</dt><dd>{{ a.tur_bilgi.ad }}</dd></div>
+    <div><dt>İl</dt><dd>{% for il in a.iller %}<a href="/il/{{ a.il_sluglari[loop.index0] }}/">{{ il }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
+    {% if a.hektar_yazi %}<div><dt>Alan</dt><dd>{{ a.hektar_yazi }} hektar</dd></div>{% endif %}
+    {% if a.ilan_tarihi %}<div><dt>İlan tarihi</dt><dd>{{ a.ilan_tarihi }}</dd></div>{% endif %}
+    {% if a.plan_tarihi %}<div><dt>Gelişme planı</dt><dd>{{ a.plan_tarihi }}</dd></div>{% endif %}
+    {% if a.rakim_m %}<div><dt>Ortalama rakım</dt><dd>{{ a.rakim_m|round|int }} m</dd></div>{% endif %}
+    {% if a.dkmp_kodu %}<div><dt>DKMP kodu</dt><dd><code>{{ a.dkmp_kodu }}</code></dd></div>{% endif %}
+  </dl>
+</section>
+
+<section class="konum">
+  <h2>Konum</h2>
+  {% if a.koordinat_yazi and a.koordinat_durum != "supheli" %}
+  <p class="koordinat">
+    <code>{{ a.koordinat_yazi }}</code>
+    <button type="button" class="dugme kucuk-dugme" data-kopyala="{{ a.koordinat_yazi }}">Koordinatı kopyala</button>
+  </p>
+  <p><a class="dugme" href="{{ a.maps_url }}" rel="noopener nofollow" target="_blank">Google Haritalar'da aç</a></p>
+  {% if a.koordinat_durum == "duzeltildi_ters" %}
+  <p class="soluk kucuk">Not: Resmî kayıtta bu alanın enlem ve boylam sütunları ters girilmiş.
+  Yer değiştirildiğinde nokta ilin içine düştüğü için düzeltilmiş hâli gösteriliyor.</p>
+  {% endif %}
+  {% elif a.koordinat_durum == "supheli" %}
+  <div class="durum belirsiz">
+    <span class="durum-ikon" aria-hidden="true">⚠</span>
+    <div>
+      <strong>Koordinat doğrulanamadı.</strong>
+      <p>Resmî kayıttaki koordinat ({{ a.koordinat_yazi }}), aynı ildeki diğer korunan alanların
+      ortancasından yaklaşık {{ a.sapma_km }} km uzakta. Kaynak veriyi değiştirmiyoruz; ancak
+      harita üzerinde göstermiyoruz. Konumu alan müdürlüğünden teyit edin.</p>
+    </div>
+  </div>
+  {% else %}
+  <p class="soluk">DKMP kaydında bu alan için koordinat bulunmuyor.</p>
+  {% endif %}
+</section>
+
+{% if a.kaynak_liste or a.rekreasyon_liste %}
+<section class="degerler">
+  <h2>Kaynak ve rekreasyon değerleri</h2>
+  {% if a.kaynak_liste %}
+  <p><strong>Kaynak değeri:</strong> {{ a.kaynak_liste|join(", ") }}</p>
+  {% endif %}
+  {% if a.rekreasyon_liste %}
+  <p><strong>Rekreasyon değeri:</strong></p>
+  <ul class="etiketler">
+    {% for r in a.rekreasyon_liste %}<li class="etiket{% if 'kamp' in r|lower or 'çadır' in r|lower or 'karavan' in r|lower %} vurgu{% endif %}">{{ r }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endif %}
+
+{% if sss %}
+<section class="sss">
+  <h2>Sık sorulan sorular</h2>
+  {% for s in sss %}
+  <details{% if loop.first %} open{% endif %}>
+    <summary>{{ s.s }}</summary>
+    <p>{{ s.c }}</p>
+  </details>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section class="kaynakca">
+  <h2>Kaynak</h2>
+  <p>Bu sayfadaki tür, alan, ilan tarihi, rakım ve rekreasyon bilgileri
+  <a href="{{ a.kaynak.url }}" rel="noopener" target="_blank">{{ a.kaynak.ad }}</a>
+  yayınından ({{ a.kaynak.dosya }}) alınmıştır.</p>
+  <p class="damga">Son doğrulama: {{ a.dogrulama }}</p>
+</section>
+
+{% if benzer %}
+<section class="benzer">
+  <h2>{{ a.iller[0] }}'deki diğer korunan alanlar</h2>
+  <div class="izgara">{% for b in benzer %}{{ kart(b) }}{% endfor %}</div>
+</section>
+{% endif %}
+
+</article>
+{% endblock %}

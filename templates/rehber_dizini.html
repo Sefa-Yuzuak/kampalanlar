@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block icerik %}
+<section class="sayfa-bas">
+  <h1>Kamp rehberleri</h1>
+  <p class="buyuk">Türkiye'de nereye kamp kurulabilir, izin nasıl alınır, ceza ne kadar.
+  Hepsi mevzuat ve resmî kaynakla.</p>
+</section>
+<div class="izgara uc">
+  {% for r in rehberler %}
+  <a class="bilgi-kart bag" href="{{ r.url }}">
+    <strong>{{ r.baslik }}</strong>
+    <p class="soluk">{{ r.ozet }}</p>
+    <span class="damga">{{ r.guncelleme }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}
