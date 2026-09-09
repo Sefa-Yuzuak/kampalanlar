@@ -77,13 +77,20 @@ def main() -> int:
         tum_yollar.add(yol)
         h = p.read_text(encoding="utf-8", errors="replace")
 
+        # noindex sayfa arama sonucunda hiç görünmez: başlığı ya da açıklaması
+        # başka bir sayfayla aynı olsa bile yinelenen içerik üretmez, kanonik
+        # hedef belirtmek zorunda da değildir. Denetimde bu ayrım şart —
+        # yoksa her sitede 404 sayfası sahte bulgu üretiyor.
+        noindex = bool(re.search(r'name="robots"[^>]*content="[^"]*noindex', h, re.I))
+
         # --- başlık / açıklama
         m = re.search(r"<title>(.*?)</title>", h, re.S)
         baslik = H.unescape(m.group(1)).strip() if m else ""
         if not baslik:
             bul("YUKSEK", yol, "title yok")
         else:
-            basliklar[baslik] += 1
+            if not noindex:
+                basliklar[baslik] += 1
             if len(baslik) > BASLIK_EN:
                 bul("DUSUK", yol, f"başlık {len(baslik)} karakter (sınır {BASLIK_EN})")
 
@@ -91,7 +98,8 @@ def main() -> int:
         if not aciklama:
             bul("YUKSEK", yol, "meta description yok")
         else:
-            aciklamalar[aciklama] += 1
+            if not noindex:
+                aciklamalar[aciklama] += 1
             if len(aciklama) > ACIKLAMA_EN:
                 bul("ORTA", yol, f"açıklama {len(aciklama)} karakter (sınır {ACIKLAMA_EN})")
 
@@ -100,8 +108,6 @@ def main() -> int:
             bul("ORTA", yol, "lang=\"tr\" yok")
         if not re.search(r'name="viewport"', h):
             bul("ORTA", yol, "viewport yok")
-        # noindex sayfa yinelenen icerik uretemez; canonical denetiminden muaf.
-        noindex = bool(re.search(r'name="robots"[^>]*content="[^"]*noindex', h, re.I))
         kan = re.search(r'<link[^>]+rel="canonical"[^>]+href="([^"]+)"', h)
         if not kan:
             if not noindex:
