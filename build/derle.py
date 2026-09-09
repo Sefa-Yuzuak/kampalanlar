@@ -430,7 +430,7 @@ def main() -> None:
     # 404
     (DIST / "404.html").write_text(env.get_template("404.html").render(
         baslik="Sayfa bulunamadı", meta_desc="Aradığınız sayfa bulunamadı.",
-        canonical="/404.html", schema=[], **ortak), encoding="utf-8")
+        canonical="/404.html", schema=[], tam_baslik=tam_baslik("Sayfa bulunamadı"), **ortak), encoding="utf-8")
 
     # açık veri
     (DIST / "veri").mkdir(exist_ok=True)
