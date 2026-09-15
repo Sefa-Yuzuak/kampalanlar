@@ -18,6 +18,12 @@
     <p>DKMP'nin 2025 korunan alan istatistiklerinde bu alanın rekreasyon değeri arasında
     <em>{{ a.rekreasyon }}</em> geçiyor. Kamp yalnızca <strong>idarece belirlenen alanlarda</strong> ve
     <a href="/kamp-ucretleri-2026/">resmî ücret tarifesine</a> göre yapılabilir.</p>
+    {% if a.tarife %}
+    <p class="tarife-satir">Resmî tarife: <strong>{{ a.tarife.kategori }}. kategori</strong>,
+    {{ a.tarife.grup }} bölge grubu — 4 kişilik çadır için günlük
+    <strong>{{ a.tarife.ucret }} ₺</strong>. Ortak kullanım bedeli ayrıca alınabilir.
+    <a href="/kamp-ucretleri-2026/">Tarifenin tamamı</a></p>
+    {% endif %}
   </div>
 </div>
 {% else %}

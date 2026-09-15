@@ -1,0 +1,2326 @@
+{
+ "yil": 2026,
+ "kaynak": {
+  "ad": "Tarım ve Orman Bakanlığı DKMP, Korunan Alanlar Ücret Tarifesi 2026 (EK-1 Coğrafi Grup ve Kategorilere Göre Korunan Alanlar Listesi)",
+  "url": "https://www.tarimorman.gov.tr/DKMP/Menu/39/Korunan-Alanlar-Ucret-Tarifesi",
+  "erisim": "2026-09-15"
+ },
+ "kayitlar": [
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Köprülü Kanyon Milli Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Güver Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Güllük Dağı - Termessos Milli Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "İncekum Tabiat Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Kurşunlu Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Saklıkent Milli Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Beldibi Günübirlik Kullanım Alanı (Bahçecik)"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Beldibi-4 Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Büyük Çaltıcak Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Çıralı Yanartaş Mola Noktası"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Göynük Kanyonu Tur Güzergahı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Kargıcak-2 Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Kesmeboğazı-2 Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Üçgen Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Topçam Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 1,
+   "ad": "Beydağları SMP-Alacasu Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Altınbeşik Mağarası Milli Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Tekirova Tabiat Parkı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Zeytintaşı Mağarası Tabiat Anıtı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Beydağları SMP-Beldibi-1 Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Beydağları SMP-Göynük Çomaklar Çadırlı Kamp Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Beydağları SMP-Kargıcak-1 Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Beydağları SMP-Kındılçeşme G.K.A."
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Beydağları SMP-Kesmeboğazı-1 Günübirlik Kullanım Alanı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 2,
+   "ad": "Beydağları SMP-Yarıkpınar Mola Noktası"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 3,
+   "ad": "Kocain Mağarası Tabiat Anıtı"
+  },
+  {
+   "il": "Antalya",
+   "grup": "AKDENİZ-1",
+   "kategori": 3,
+   "ad": "Mavikent Tabiat Parkı"
+  },
+  {
+   "il": "Adana",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Aladağlar Milli Parkı"
+  },
+  {
+   "il": "Adana",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Dağılcak Tabiat Parkı"
+  },
+  {
+   "il": "Adana",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Çukurova Biyolojik Çeşitlilik Tanıtım Merkezi"
+  },
+  {
+   "il": "Adana",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Belemedik Tabiat Parkı"
+  },
+  {
+   "il": "Adana",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Karataş -Kumluk Tabiat Parkı"
+  },
+  {
+   "il": "Adana",
+   "grup": "AKDENİZ-2",
+   "kategori": 3,
+   "ad": "Obruk Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Isparta",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Başpınar Tabiat Parkı"
+  },
+  {
+   "il": "Isparta",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Isparta Gölcük Tabiat Parkı"
+  },
+  {
+   "il": "Isparta",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Kızıldağ Milli Parkı, Pınargözü GBKA"
+  },
+  {
+   "il": "Isparta",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Kızıldağ Milli Parkı, Kızıldağ GBKA"
+  },
+  {
+   "il": "Isparta",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Kovada Gölü Milli Parkı"
+  },
+  {
+   "il": "Isparta",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Yazılı Kanyon Tabiat Parkı"
+  },
+  {
+   "il": "Hatay",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Şahintepesi Tabiat Parkı"
+  },
+  {
+   "il": "Hatay",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Belen Geçidi Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Gilindire Mağarası Tabiat Anıtı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Mut Yerköprü Şelalesi Tabiat Anıtı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Talat Göktepe(Erdemliçamlığı) Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Sarıkayalar Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Aydıncık Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Dikilitaş Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Gümüşkum (Yüzüncüyıl) Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Karaekşi Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Kuyuluk Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Pullu Tabiat Parkı"
+  },
+  {
+   "il": "Mersin",
+   "grup": "AKDENİZ-2",
+   "kategori": 2,
+   "ad": "Şehitlik Tabiat Parkı"
+  },
+  {
+   "il": "Osmaniye",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Çiftmazı Tabiat Parkı"
+  },
+  {
+   "il": "Osmaniye",
+   "grup": "AKDENİZ-2",
+   "kategori": 1,
+   "ad": "Karatepe - Aslantaş Milli Parkı"
+  },
+  {
+   "il": "Burdur",
+   "grup": "AKDENİZ-3",
+   "kategori": 1,
+   "ad": "Salda Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Burdur",
+   "grup": "AKDENİZ-3",
+   "kategori": 2,
+   "ad": "Serenler Tepesi Tabiat Parkı"
+  },
+  {
+   "il": "Burdur",
+   "grup": "AKDENİZ-3",
+   "kategori": 3,
+   "ad": "Karanlıkdere Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Kahramanmaraş",
+   "grup": "AKDENİZ-3",
+   "kategori": 1,
+   "ad": "Kapıçam Tabiat Parkı"
+  },
+  {
+   "il": "Kahramanmaraş",
+   "grup": "AKDENİZ-3",
+   "kategori": 1,
+   "ad": "Kapıçam T.P Botanik Parkı"
+  },
+  {
+   "il": "Kahramanmaraş",
+   "grup": "AKDENİZ-3",
+   "kategori": 1,
+   "ad": "Yavşan Yaylası Tabiat Parkı"
+  },
+  {
+   "il": "Kahramanmaraş",
+   "grup": "AKDENİZ-3",
+   "kategori": 3,
+   "ad": "Geben Vadisi Milli Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Gümüldür Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Meryemana Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "Çiçekli Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "Efeoğlu Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "İzmir Karagöl Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "Tanay Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "Yamanlardağı Tabiat Parkı"
+  },
+  {
+   "il": "İzmir",
+   "grup": "EGE-1",
+   "kategori": 3,
+   "ad": "Ekmeksiz Plajı Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Saklıkent Milli Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Bafa Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Çubucak Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Katrancı Koyu Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Kovanlık Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Küçük Kargı Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Marmaris Milli Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Ömer Eşen Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Öüdeniz-Kıdrak Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 1,
+   "ad": "Usuluk Koyu Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "Güvercinlik Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 2,
+   "ad": "İnbükü Tabiat Parkı"
+  },
+  {
+   "il": "Muğla",
+   "grup": "EGE-1",
+   "kategori": 3,
+   "ad": "Karanlıkdere Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Aydın",
+   "grup": "EGE-2",
+   "kategori": 1,
+   "ad": "Bafa Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Aydın",
+   "grup": "EGE-2",
+   "kategori": 1,
+   "ad": "Dilek Yarımadası–Büyük Menderes Deltası Milli Parkı"
+  },
+  {
+   "il": "Aydın",
+   "grup": "EGE-2",
+   "kategori": 1,
+   "ad": "Tavşanburnu Tabiat Parkı"
+  },
+  {
+   "il": "Aydın",
+   "grup": "EGE-2",
+   "kategori": 3,
+   "ad": "Çağlayan Tabiat Parkı"
+  },
+  {
+   "il": "Aydın",
+   "grup": "EGE-2",
+   "kategori": 3,
+   "ad": "Şarlan Tabiat Parkı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 1,
+   "ad": "Spil Dağı Milli Parkı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 2,
+   "ad": "Kula Peribacaları Tabiat Anıtı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 2,
+   "ad": "Mesir Tabiat Parkı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 2,
+   "ad": "Emir Kaplıcaları Tabiat Parkı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 2,
+   "ad": "Yelimera Kanyonu Tabiat Anıtı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 2,
+   "ad": "Süreyya Tabiat Parkı"
+  },
+  {
+   "il": "Manisa",
+   "grup": "EGE-2",
+   "kategori": 3,
+   "ad": "Gelin Uçtu Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Akdağ Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Başkomutan Tarihi Milli Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Dinar Pınarlı Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "26 Agustos Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Erkmen Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Frig Vadisi Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Yedikapı Tabiat Parkı"
+  },
+  {
+   "il": "Afyonkarahisar",
+   "grup": "EGE-3",
+   "kategori": 3,
+   "ad": "Sultandağı Tabiat Parkı"
+  },
+  {
+   "il": "Denizli",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Akdağ Tabiat Parkı"
+  },
+  {
+   "il": "Denizli",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Honaz Dağı Milli Parkı"
+  },
+  {
+   "il": "Kütahya",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Başkomutan Tarihi Milli Parkı"
+  },
+  {
+   "il": "Kütahya",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Çamlıca Tabiat Parkı"
+  },
+  {
+   "il": "Kütahya",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Enne Barajı Tabiat Parkı"
+  },
+  {
+   "il": "Kütahya",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Topuk Yaylası Tabiat Parkı"
+  },
+  {
+   "il": "Kütahya",
+   "grup": "EGE-3",
+   "kategori": 3,
+   "ad": "Çavdarhisar Barajı Tabiat Parkı"
+  },
+  {
+   "il": "Uşak",
+   "grup": "EGE-3",
+   "kategori": 1,
+   "ad": "Başkomutan Tarihi Milli Parkı"
+  },
+  {
+   "il": "Uşak",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Göğem Zafer Tabiat Parkı"
+  },
+  {
+   "il": "Uşak",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Taşyaran Vadisi Tabiat Parkı"
+  },
+  {
+   "il": "Uşak",
+   "grup": "EGE-3",
+   "kategori": 2,
+   "ad": "Ulubey Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Edirne",
+   "grup": "MARMARA-1",
+   "kategori": 1,
+   "ad": "Danişment Tabiat Parkı"
+  },
+  {
+   "il": "Edirne",
+   "grup": "MARMARA-1",
+   "kategori": 1,
+   "ad": "Gökçetepe Tabiat Parkı"
+  },
+  {
+   "il": "Edirne",
+   "grup": "MARMARA-1",
+   "kategori": 2,
+   "ad": "Gala Gölü Milli Parkı"
+  },
+  {
+   "il": "Edirne",
+   "grup": "MARMARA-1",
+   "kategori": 2,
+   "ad": "Vakıf Tabiat Parkı"
+  },
+  {
+   "il": "Balıkesir",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Ayvalık Adaları Tabiat Parkı"
+  },
+  {
+   "il": "Balıkesir",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Darıdere Tabiat Parkı"
+  },
+  {
+   "il": "Balıkesir",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Değirmenboğazı Tabiat Parkı"
+  },
+  {
+   "il": "Balıkesir",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Kazdağı Milli Parkı"
+  },
+  {
+   "il": "Balıkesir",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Kuşcenneti Milli Parkı"
+  },
+  {
+   "il": "Balıkesir",
+   "grup": "MARMARA-2",
+   "kategori": 2,
+   "ad": "Sarımsaklı Tabiat Parkı"
+  },
+  {
+   "il": "Bursa",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Uludağ Milli Parkı"
+  },
+  {
+   "il": "Bursa",
+   "grup": "MARMARA-2",
+   "kategori": 2,
+   "ad": "Sadağı Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Bursa",
+   "grup": "MARMARA-2",
+   "kategori": 2,
+   "ad": "Suuçtu Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Avcıkoru Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Ayvatbendi Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Belgrad Ormanı Ana Girişleri"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Bentler Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Büyükada Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Çilingoz Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Danamandıra Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Değirmenburnu Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Dilburnu Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Elmasburnu Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "F. Rıfkı Atay Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Fatih Çeşmesi Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Fatih Sultan Mehmet Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Göktürk Göleti Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Göztepe Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Irmak Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Kirazlıbent Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Kömürcübent Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Marmaracık Koyu Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Mehmet Akif Ersoy Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Mihrabat Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Neşetsuyu Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Park Ormanı Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Polonezköy Tabiat Parkı Doğal Yaşam Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Polonezköy T.P. Günübirlik Kullanım Alanı - 1"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Şamlar Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Türkmenbaşı Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 2,
+   "ad": "Hacet Deresi Tabiat Parkı"
+  },
+  {
+   "il": "İstanbul",
+   "grup": "MARMARA-2",
+   "kategori": 3,
+   "ad": "Kağıthane Hasdal Tabiat Parkı"
+  },
+  {
+   "il": "Kırklareli",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "İğneada Longoz Ormanları Milli Parkı"
+  },
+  {
+   "il": "Kırklareli",
+   "grup": "MARMARA-2",
+   "kategori": 1,
+   "ad": "Kavaklımeşe Korusu Tabiat Parkı"
+  },
+  {
+   "il": "Bilecik",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Küçükelmalı Tabiat Parkı"
+  },
+  {
+   "il": "Bilecik",
+   "grup": "MARMARA-3",
+   "kategori": 2,
+   "ad": "Erikli Tabiat Parkı"
+  },
+  {
+   "il": "Bilecik",
+   "grup": "MARMARA-3",
+   "kategori": 2,
+   "ad": "Harmankaya Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Bilecik",
+   "grup": "MARMARA-3",
+   "kategori": 2,
+   "ad": "Kınık Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Çanakkale",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Ayazmapınarı Tabiat Parkı"
+  },
+  {
+   "il": "Çanakkale",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Troya Tarihi Milli Parkı"
+  },
+  {
+   "il": "Çanakkale",
+   "grup": "MARMARA-3",
+   "kategori": 3,
+   "ad": "Denizgöründü Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Ballıkayalar Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Beşkayalar Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Eriklitepe Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Gazilerdağı Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Kuzuyayla Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Suadiye Tabiat Parkı"
+  },
+  {
+   "il": "Kocaeli",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Ormanya (Uzuntarla) Tabiat Parkı"
+  },
+  {
+   "il": "Sakarya",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "İl Ormanı Tabiat Parkı"
+  },
+  {
+   "il": "Sakarya",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Kuzuluk Tabiat Parkı"
+  },
+  {
+   "il": "Sakarya",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Acarlar Longozu Sulak Alanı"
+  },
+  {
+   "il": "Sakarya",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Poyrazlar Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Sakarya",
+   "grup": "MARMARA-3",
+   "kategori": 3,
+   "ad": "Doğançay Şelalesi Tabiat Anıtı"
+  },
+  {
+   "il": "Sakarya",
+   "grup": "MARMARA-3",
+   "kategori": 3,
+   "ad": "Karagöl Yaylası Sarıçamı Tabiat Anıtı"
+  },
+  {
+   "il": "Tekirdağ",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Çamlıkoy Tabiat Parkı"
+  },
+  {
+   "il": "Tekirdağ",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "Tekirdağ Kartaltepe Tabiat Parkı"
+  },
+  {
+   "il": "Yalova",
+   "grup": "MARMARA-3",
+   "kategori": 2,
+   "ad": "Delmece Yaylası Tabiat Parkı"
+  },
+  {
+   "il": "Yalova",
+   "grup": "MARMARA-3",
+   "kategori": 2,
+   "ad": "Harmankaya Tabiat Parkı"
+  },
+  {
+   "il": "Yalova",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "İLLER BAZINDA KATEGORİLERİNE GÖRE KORUNAN ALANLAR"
+  },
+  {
+   "il": "Yalova",
+   "grup": "MARMARA-3",
+   "kategori": 1,
+   "ad": "I. KATEGORİ"
+  },
+  {
+   "il": "Yalova",
+   "grup": "MARMARA-3",
+   "kategori": 2,
+   "ad": "II. KATEGORİ"
+  },
+  {
+   "il": "Yalova",
+   "grup": "MARMARA-3",
+   "kategori": 3,
+   "ad": "III. KATEGORİ"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 1,
+   "ad": "Eğriova Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 1,
+   "ad": "Kartaltepe Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 1,
+   "ad": "Sakarya Meydan Muharebesi Tarihi Milli Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 1,
+   "ad": "Soğuksu Milli Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 1,
+   "ad": "Sorgun Göleti Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 2,
+   "ad": "Aluçdağı Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 2,
+   "ad": "Çamkoru Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 2,
+   "ad": "Çubuk Karagöl Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 2,
+   "ad": "Şahinler Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 2,
+   "ad": "Tekkedağı Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 3,
+   "ad": "Asarlık Tepeler Tabiat Anıtı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 3,
+   "ad": "Durasan Şah Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 3,
+   "ad": "Kelebekler Vadisi Tabiat Parkı"
+  },
+  {
+   "il": "Ankara",
+   "grup": "İÇ ANADOLU-1",
+   "kategori": 3,
+   "ad": "Kız Tepesi Tabiat Anıtı"
+  },
+  {
+   "il": "Eskişehir",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Musaözü Tabiat Parkı"
+  },
+  {
+   "il": "Eskişehir",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Kanlıpınar Tabiat Parkı"
+  },
+  {
+   "il": "Eskişehir",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Yunus Emre Tabiat Parkı"
+  },
+  {
+   "il": "Kayseri",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Aladağlar Milli Parkı"
+  },
+  {
+   "il": "Kayseri",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Derebağ Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Kayseri",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Sultan Sazlığı Milli Parkı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Akyokuş Tabiat Parkı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Beyşehir Gölü Milli Parkı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Derebucak Çamlık Mağaraları Milli Parkı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Meke Gölü Tabiat Anıtı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Yakamanastır Tabiat Parkı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Kocakoru Ormanı Tabiat Parkı"
+  },
+  {
+   "il": "Konya",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Kuğulu Tabiat Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Canköy Tabiat Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Karşıyaka Tabiat Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Divriği Milli Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Kangal Balıklıgöl Tabiat Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 3,
+   "ad": "Oymalık Tabiat Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 3,
+   "ad": "Gökpınar Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Sivas",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 3,
+   "ad": "Dipsizgöl Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Yozgat",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 1,
+   "ad": "Yozgat Çamlığı Milli Parkı"
+  },
+  {
+   "il": "Yozgat",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Kadıpınarı Tabiat Parkı"
+  },
+  {
+   "il": "Yozgat",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 2,
+   "ad": "Oluközü Tabiat Parkı"
+  },
+  {
+   "il": "Yozgat",
+   "grup": "İÇ ANADOLU-2",
+   "kategori": 3,
+   "ad": "Üçtepeler Tabiat Parkı"
+  },
+  {
+   "il": "Çankırı",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 1,
+   "ad": "Ilgaz Dağı Milli Parkı"
+  },
+  {
+   "il": "Çankırı",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 1,
+   "ad": "İstiklal Yolu Tarihi Milli Parkı"
+  },
+  {
+   "il": "Çankırı",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 2,
+   "ad": "Hazım Dağlı Tabiat Parkı"
+  },
+  {
+   "il": "Çankırı",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 2,
+   "ad": "Kadınçayırı Tabiat Parkı"
+  },
+  {
+   "il": "Çankırı",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 3,
+   "ad": "Kenbağ Tabiat Parkı"
+  },
+  {
+   "il": "Kırıkkale",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 2,
+   "ad": "Karaahmetli Tabiat Parkı"
+  },
+  {
+   "il": "Kırşehir",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 2,
+   "ad": "Seyfe Gölü Sulak Alanı (ZTM)"
+  },
+  {
+   "il": "Kırşehir",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 2,
+   "ad": "Aşıkpaşa Tabiat Parkı"
+  },
+  {
+   "il": "Niğde",
+   "grup": "İÇ ANADOLU-3",
+   "kategori": 1,
+   "ad": "Aladağlar Milli Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 1,
+   "ad": "Abant Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 1,
+   "ad": "Bolu Gölcük Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 1,
+   "ad": "Yedigöller Milli Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Ayıkayası Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Beşpınarlar Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Kıbrıscık Karagöl Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Göksu Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Sülüklügöl Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Deregöl Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Arkutdağı Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Karaca Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 2,
+   "ad": "Sünnet Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Bolu",
+   "grup": "KARADENİZ-1",
+   "kategori": 3,
+   "ad": "Kargalı Gölcük Tabiat Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Borçka Karagöl Tabiat Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Cehennem Deresi Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Hatila Vadisi Milli Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Kaçkar Dağları Milli Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Karagöl – Sahara Milli Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Altıparmak Tabiat Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Balıklı ve Güneşli Şelaleleri Tabiat Parkı"
+  },
+  {
+   "il": "Artvin",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Tavşan Tepesi Tabiat Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Dipsizgöl Tabiat Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Ilgaz Dağı Milli Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "İstiklal Yolu Tarihi Milli Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Küre Dağları Milli Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Şehit Şerifebacı Tabiat Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Ersizlerdere Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Kastamonu",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Yeşilyuva Tabiat Parkı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Kaçkar Dağları Milli Parkı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Handüzü Tabiat Parkı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Hemşin Şelaleleri Tabiat Parkı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Isırlık Tabiat Parkı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "İkizdere Manle Şelalesi Tabiat Anıtı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Gençlik Tabiat Parkı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Gindeş Şelalesi Tabiat Anıtı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Tar Deresi Bulut Şelalesi Tabiat Anıtı"
+  },
+  {
+   "il": "Rize",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Tunca Vadisi Tabiat Parkı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Bayraktepe Tabiat Parkı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Şahinkayası Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Vezirsuyu Tabiat Parkı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Amazon Tabiat Parkı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Çalkaya Takım Şelaleleri Tabiat Anıtı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Sarıgazel Tabiat Parkı"
+  },
+  {
+   "il": "Samsun",
+   "grup": "KARADENİZ-2",
+   "kategori": 3,
+   "ad": "Başyayla Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Hamsilos Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Tatlıca Şelaleleri Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Topalçam Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Akgöl Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Bazalt Kayalıkları Tabiat Anıtı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Buzluk Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "İnaltı Mağarası Tabiat Parkı"
+  },
+  {
+   "il": "Sinop",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Sorkun Şelaleleri Tabiat Anıtı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Altındere Vadisi Milli Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Sürmene Çamburnu Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Uzungöl Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Sera Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Beşikdağ Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Çalcamili Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Görnek Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Kadıralak Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Kayabaşı Tabiat Parkı"
+  },
+  {
+   "il": "Trabzon",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Sis Dağı Tabiat Parkı"
+  },
+  {
+   "il": "Amasya",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Boraboy Tabiat Parkı"
+  },
+  {
+   "il": "Bartın",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Balamba Tabiat Parkı"
+  },
+  {
+   "il": "Bartın",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Ahatlar Tabiat Parkı"
+  },
+  {
+   "il": "Bartın",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Gürcüoluk Tabiat Parkı"
+  },
+  {
+   "il": "Çorum",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Boğazköy – Alacahöyük Milli Parkı"
+  },
+  {
+   "il": "Çorum",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Sıklık Tabiat Parkı"
+  },
+  {
+   "il": "Çorum",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Aksu Tabiat Parkı"
+  },
+  {
+   "il": "Çorum",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Çatak Tabiat Parkı"
+  },
+  {
+   "il": "Düzce",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Aydınpınar Şelaleleri Tabiat Parkı"
+  },
+  {
+   "il": "Düzce",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Güzeldere Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Düzce",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Kurugöl Tabiat Parkı"
+  },
+  {
+   "il": "Düzce",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Samandere Şelalesi Tabiat Anıtı"
+  },
+  {
+   "il": "Düzce",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Efteni Gölü YHGS&Sulak Alanı"
+  },
+  {
+   "il": "Düzce",
+   "grup": "KARADENİZ-2",
+   "kategori": 3,
+   "ad": "Geyiklibel Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Koçkayası Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Kuzalan Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Ağaçbaşı Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Aymaç Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Efendioğlu Hanyanı Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Harşit Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Hızırilyas Tepesi Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Köroğlu Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Paşaca Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Şaban Kalesi Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Yedideğirmenler Tabiat Parkı"
+  },
+  {
+   "il": "Giresun",
+   "grup": "KARADENİZ-2",
+   "kategori": 3,
+   "ad": "Yenice Şelaleleri Tabiat Anıtı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Limni Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Tomara Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Artabel Gölleri Tabiat Parkı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Çağlayandibi Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Karşıyaka Tabiat Parkı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Köse Tabiat Parkı"
+  },
+  {
+   "il": "Gümüşhane",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Telme Tabiat Parkı"
+  },
+  {
+   "il": "Ordu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Çınarsuyu Tabiat Parkı"
+  },
+  {
+   "il": "Ordu",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Ulugöl Tabiat Parkı"
+  },
+  {
+   "il": "Tokat",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Ballıca Mağarası Tabiat Parkı"
+  },
+  {
+   "il": "Tokat",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Zinav Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Zonguldak",
+   "grup": "KARADENİZ-2",
+   "kategori": 1,
+   "ad": "Milli Egemenlik Tabiat Parkı"
+  },
+  {
+   "il": "Zonguldak",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Danaağzı Tabiat Parkı"
+  },
+  {
+   "il": "Zonguldak",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Göldağı Tabiat Parkı"
+  },
+  {
+   "il": "Zonguldak",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Gümeli Tabiat Anıtı"
+  },
+  {
+   "il": "Zonguldak",
+   "grup": "KARADENİZ-2",
+   "kategori": 2,
+   "ad": "Harmankaya Şelaleleri Tabiat Anıtı"
+  },
+  {
+   "il": "Zonguldak",
+   "grup": "KARADENİZ-2",
+   "kategori": 3,
+   "ad": "Kayalıdere Tabiat Parkı"
+  },
+  {
+   "il": "Bayburt",
+   "grup": "KARADENİZ-3",
+   "kategori": 2,
+   "ad": "Yakupabdal Tabiat Parkı"
+  },
+  {
+   "il": "Bayburt",
+   "grup": "KARADENİZ-3",
+   "kategori": 3,
+   "ad": "Kop Dağı Müdafaası Tarihi Milli Parkı"
+  },
+  {
+   "il": "Karabük",
+   "grup": "KARADENİZ-3",
+   "kategori": 2,
+   "ad": "Baklabostan Tabiat Parkı"
+  },
+  {
+   "il": "Karabük",
+   "grup": "KARADENİZ-3",
+   "kategori": 1,
+   "ad": "İLLER BAZINDA KATEGORİLERİNE GÖRE KORUNAN ALANLAR"
+  },
+  {
+   "il": "Karabük",
+   "grup": "KARADENİZ-3",
+   "kategori": 1,
+   "ad": "I. KATEGORİ"
+  },
+  {
+   "il": "Karabük",
+   "grup": "KARADENİZ-3",
+   "kategori": 2,
+   "ad": "II. KATEGORİ"
+  },
+  {
+   "il": "Karabük",
+   "grup": "KARADENİZ-3",
+   "kategori": 3,
+   "ad": "III. KATEGORİ"
+  },
+  {
+   "il": "Elazığ",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Hazar Gölü Tabiat Parkı"
+  },
+  {
+   "il": "Elazığ",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 3,
+   "ad": "Saklıkapı Kanyonu Tabiat Parkı"
+  },
+  {
+   "il": "Erzurum",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Kaçkar Dağları Milli Parkı"
+  },
+  {
+   "il": "Erzurum",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Nene Hatun Tarihi Milli Parkı"
+  },
+  {
+   "il": "Erzurum",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 2,
+   "ad": "Sarıkamış-Allahuekber Dağları Milli Parkı"
+  },
+  {
+   "il": "Erzurum",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 3,
+   "ad": "Kop Dağı Müdafaası Tarihi Milli Parkı"
+  },
+  {
+   "il": "Erzurum",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 3,
+   "ad": "Narman Peribacaları Tabiat Anıtı"
+  },
+  {
+   "il": "Erzincan",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Dumanlı Tabiat Parkı"
+  },
+  {
+   "il": "Malatya",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Beydağı Tabiat Parkı"
+  },
+  {
+   "il": "Malatya",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Nemrut Dağı Milli Parkı"
+  },
+  {
+   "il": "Malatya",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Turgut Özal Tabiat Parkı"
+  },
+  {
+   "il": "Malatya",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 2,
+   "ad": "Günpınar Şelalesi Tabiat Parkı"
+  },
+  {
+   "il": "Tunceli",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 1,
+   "ad": "Munzur Vadisi Milli Parkı"
+  },
+  {
+   "il": "Tunceli",
+   "grup": "DOĞU ANADOLU-1",
+   "kategori": 2,
+   "ad": "Örenönü Tabiat Parkı"
+  },
+  {
+   "il": "Bingöl",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Yüzen Adalar Tabiat Anıtı"
+  },
+  {
+   "il": "Bitlis",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Nemrut Kalderası Tabiat Anıtı"
+  },
+  {
+   "il": "Hakkari",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Hakkari Cilo ve Sat Dağları Milli Parkı"
+  },
+  {
+   "il": "Kars",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Sarıkamış-Allahuekber Dağları Milli Parkı"
+  },
+  {
+   "il": "Kars",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Soğuksu Tabiat Parkı"
+  },
+  {
+   "il": "Muş",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Malazgirt Meydan Muharebesi Tarihi Milli"
+  },
+  {
+   "il": "Muş",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 2,
+   "ad": "Parkı"
+  },
+  {
+   "il": "Muş",
+   "grup": "DOĞU ANADOLU-2",
+   "kategori": 3,
+   "ad": "Sazlıkbaşı Tabiat Parkı"
+  },
+  {
+   "il": "Ağrı",
+   "grup": "DOĞU ANADOLU-3",
+   "kategori": 2,
+   "ad": "Ağrı Dağı Milli Parkı"
+  },
+  {
+   "il": "Ardahan",
+   "grup": "DOĞU ANADOLU-3",
+   "kategori": 2,
+   "ad": "Cemal Tural Tabiat Parkı"
+  },
+  {
+   "il": "Iğdır",
+   "grup": "DOĞU ANADOLU-3",
+   "kategori": 2,
+   "ad": "Ağrı Dağı Milli Parkı"
+  },
+  {
+   "il": "Adıyaman",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 1,
+   "ad": "Nemrut Dağı Milli Parkı"
+  },
+  {
+   "il": "Adıyaman",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 2,
+   "ad": "Gölbaşı Gölleri Tabiat Parkı"
+  },
+  {
+   "il": "Diyarbakır",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 2,
+   "ad": "Eğil Peygamberler Tabiat Parkı"
+  },
+  {
+   "il": "Diyarbakır",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 3,
+   "ad": "Yabanardıl Şeyhendede Tabiat Parkı"
+  },
+  {
+   "il": "Gaziantep",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 1,
+   "ad": "Alleben Tabiat Parkı"
+  },
+  {
+   "il": "Gaziantep",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 1,
+   "ad": "Burç Tabiat Parkı"
+  },
+  {
+   "il": "Gaziantep",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 1,
+   "ad": "Dülükbaba Tabiat Parkı"
+  },
+  {
+   "il": "Gaziantep",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 1,
+   "ad": "Gaziantep Milli Mücadele Tabiat Parkı"
+  },
+  {
+   "il": "Gaziantep",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 3,
+   "ad": "Huzurlu Tabiat Parkı"
+  },
+  {
+   "il": "Şanlıurfa",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 1,
+   "ad": "Gölpınar Tabiat Parkı"
+  },
+  {
+   "il": "Şanlıurfa",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 2,
+   "ad": "Tek Tek Dağları Milli Parkı"
+  },
+  {
+   "il": "Şanlıurfa",
+   "grup": "GÜNEYDOĞU-1",
+   "kategori": 3,
+   "ad": "Birecik Kelaynak Üretme İstasyonu"
+  },
+  {
+   "il": "Batman",
+   "grup": "GÜNEYDOĞU-2",
+   "kategori": 2,
+   "ad": "Malabadi Tabiat Parkı"
+  },
+  {
+   "il": "Kilis",
+   "grup": "GÜNEYDOĞU-2",
+   "kategori": 2,
+   "ad": "Hisar Çamlığı Tabiat Parkı"
+  },
+  {
+   "il": "Siirt",
+   "grup": "GÜNEYDOĞU-2",
+   "kategori": 2,
+   "ad": "Tillo Tabiat Parkı"
+  },
+  {
+   "il": "Siirt",
+   "grup": "GÜNEYDOĞU-2",
+   "kategori": 2,
+   "ad": "Botan Vadisi Milli Parkı"
+  },
+  {
+   "il": "Mardin",
+   "grup": "GÜNEYDOĞU-3",
+   "kategori": 2,
+   "ad": "Gap Şelalesi Tabiat Parkı"
+  }
+ ]
+}

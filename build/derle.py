@@ -25,6 +25,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+import tarife_eslesme
+
 KOK = Path(__file__).resolve().parent.parent
 DATA = KOK / "data"
 DIST = KOK / "dist"
@@ -237,6 +239,13 @@ def alan_sss(a: dict) -> list[dict]:
                        f"6831 sayılı Orman Kanunu'nun 76/a maddesi, idarece belirlenen konak "
                        f"yerleri dışında gecelemeyi yasaklıyor. İzin durumunu alan müdürlüğünden "
                        f"teyit etmeden çadır kurmayın."})
+    if a["tarife"] and a["kamp_izni_resmi"]:
+        t = a["tarife"]
+        s.append({"s": f"{a['ad']} {a['tur_bilgi']['ad']}'nda kamp ücreti ne kadar?",
+                  "c": f"DKMP'nin 2026 tarifesinde bu alan {t['kategori']}. kategoride ve "
+                       f"{t['grup']} bölge grubunda: 4 kişilik çadır için günlük yer kullanım "
+                       f"bedeli {t['ucret']} TL. Su, duş ve atık hizmetlerini kapsayan ortak "
+                       f"kullanım bedeli ayrıca alınabilir."})
     if a["hektar_yazi"]:
         s.append({"s": f"{a['ad']} kaç hektar?",
                   "c": f"DKMP 2025 istatistiklerine göre {a['hektar_yazi']} hektar."})
@@ -280,6 +289,10 @@ def main() -> None:
     site["derleme_zamani"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     alanlar = hazirla(yukle("korunan_alanlar.json"), site)
+    tarife = yukle("tarife_2026.json", None)
+    # EK-1 kategorisi + EK-4 ucreti: eslesen alanda sayfada kendi ucreti yazar.
+    eslesen = tarife_eslesme.eslestir(alanlar, yukle("kategori_2026.json", None), tarife)
+    print(f"tarife eslesmesi: {eslesen}/{len(alanlar)} alan")
     rehberler = yukle("rehberler.json", [])
     sayfalar = yukle("sayfalar.json", [])
 
@@ -402,7 +415,6 @@ def main() -> None:
 
     # 2026 resmî ücret tarifesi — "milli park kamp ücreti 2026" sorgusunda
     # bugün ilk sıradaki sonuç bir PDF; HTML muadili rakipsiz.
-    tarife = yukle("tarife_2026.json", None)
     if tarife:
         tum = [v for g in tarife["gruplar"] for v in g["ucret"].values()]
         sss_tarife = [
@@ -416,8 +428,9 @@ def main() -> None:
                   "tüketimi ve ısınma giderleri bu bedele dahil değildir."},
             {"s": "Kategoriyi nereden öğrenirim?",
              "c": "Kategori, alanın DKMP tarafından belirlenen sınıfıdır ve aynı ilde farklı "
-                  "kategoride alan bulunabilir. Alanın kategorisi için DKMP'nin ücret tarifesi "
-                  "sayfasındaki EK-1 listesine bakın."},
+                  "kategoride alan bulunabilir. Resmî EK-1 listesindeki kategoriyi her alanın "
+                  "kendi sayfasına yazdık; aşağıdaki tabloda kamp izinli alanların kategorisi "
+                  "ve günlük çadır bedeli birlikte duruyor."},
         ]
         sayfa("/kamp-ucretleri-2026/", "tarife.html",
               f"Kamp Ücretleri {tarife['yil']}: Resmî DKMP Tarifesi",
@@ -425,6 +438,8 @@ def main() -> None:
               f"günlük ücretler, {min(tum)}–{max(tum)} TL. Doğrudan resmî PDF'ten çıkarıldı.",
               [sss_schema(sss_tarife), kirintilar(site, ("Kamp ücretleri", "/kamp-ucretleri-2026/"))],
               oncelik="0.9", tarife=tarife, en_az=min(tum), en_cok=max(tum), sss=sss_tarife,
+              tarifeli=sorted((a for a in kamp_izinli if a["tarife"]),
+                              key=lambda x: (-x["tarife"]["ucret"], x["ad"])),
               kirinti=[("Kamp ücretleri", "/kamp-ucretleri-2026/")])
 
     # rehberler

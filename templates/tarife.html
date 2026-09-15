@@ -43,6 +43,37 @@
   </table>
 </div>
 
+{% if tarifeli %}
+<h2>Kamp izinli alanların kategorisi ve günlük çadır bedeli</h2>
+<p>Resmî EK-1 listesindeki kategori ile yukarıdaki grup tarifesi birleştirildi.
+DKMP kaydında kamp izni görünen ve EK-1'de adı geçen <strong>{{ tarifeli|length }} alan</strong>
+aşağıda; eşleşmeyen alanlarda tutar yazılmadı.</p>
+<div class="tablo-kap">
+  <table class="veri-tablo">
+    <thead>
+      <tr>
+        <th scope="col">Alan</th>
+        <th scope="col">İl</th>
+        <th scope="col">Kategori</th>
+        <th scope="col">Bölge grubu</th>
+        <th scope="col">Günlük çadır</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for a in tarifeli %}
+      <tr>
+        <th scope="row"><a href="{{ a.url }}">{{ a.ad }} {{ a.tur_bilgi.ad }}</a></th>
+        <td class="kucuk">{{ a.il }}</td>
+        <td>{{ a.tarife.kategori }}.</td>
+        <td class="kucuk">{{ a.tarife.grup }}</td>
+        <td><strong>{{ a.tarife.ucret }} ₺</strong></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
 <h2>Tarifeyi okurken</h2>
 <ul>
 {% for n in tarife.notlar %}<li>{{ n }}</li>{% endfor %}

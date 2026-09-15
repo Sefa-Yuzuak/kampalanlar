@@ -203,3 +203,5 @@ a.etiket:hover{border-color:var(--yesil-ac);color:var(--yesil)}
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .kart:hover{transform:none}
 }
+/* Alan sayfasindaki resmi tarife satiri (EK-1 kategorisi + EK-4 ucreti) */
+.durum .tarife-satir{margin:.7rem 0 0;padding-top:.7rem;border-top:1px dashed currentColor}
