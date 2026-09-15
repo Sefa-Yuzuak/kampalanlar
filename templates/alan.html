@@ -53,7 +53,9 @@
     <code>{{ a.koordinat_yazi }}</code>
     <button type="button" class="dugme kucuk-dugme" data-kopyala="{{ a.koordinat_yazi }}">Koordinatı kopyala</button>
   </p>
-  <p><a class="dugme" href="{{ a.maps_url }}" rel="noopener nofollow" target="_blank">Google Haritalar'da aç</a></p>
+  <p><a class="dugme" href="{{ a.maps_url }}" rel="noopener nofollow" target="_blank">Google Haritalar'da aç</a>
+     <a class="dugme" href="{{ a.yol_tarifi_url }}" rel="noopener nofollow" target="_blank">Yol tarifi al</a></p>
+  {% if a.merkez_km %}<p class="soluk">{{ a.merkez_ad }} merkezine kuş uçuşu yaklaşık <strong>{{ a.merkez_km }} km</strong> (il merkezi koordinatı: Wikidata; karayolu mesafesi daha uzundur).</p>{% endif %}
   {% if a.koordinat_durum == "duzeltildi_ters" %}
   <p class="soluk kucuk">Not: Resmî kayıtta bu alanın enlem ve boylam sütunları ters girilmiş.
   Yer değiştirildiğinde nokta ilin içine düştüğü için düzeltilmiş hâli gösteriliyor.</p>

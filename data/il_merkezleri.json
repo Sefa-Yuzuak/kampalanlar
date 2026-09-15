@@ -1,0 +1,496 @@
+{
+ "kaynak": {
+  "ad": "Wikidata — Türkiye illeri (P31=Q48336), idari merkez (P36), koordinat (P625)",
+  "url": "https://query.wikidata.org/",
+  "erisim": "2026-09-14"
+ },
+ "not": "İl merkezi koordinatı, Wikidata'da ilin idari merkezi olarak kayıtlı yerleşimin koordinatıdır. 'kaynak: il' olan kayıtlarda merkez koordinatı bulunmadığından ilin kendi koordinatı kullanıldı. Birden çok koordinat ifadesi olan merkezlerde ilk ifade alındı: Amasya, Diyarbakır, Konya, Çankırı",
+ "iller": {
+  "Adana": {
+   "lat": 36.98636,
+   "lng": 35.32529,
+   "merkez": "Adana",
+   "kaynak": "merkez"
+  },
+  "Adıyaman": {
+   "lat": 37.76339,
+   "lng": 38.27714,
+   "merkez": "Adıyaman",
+   "kaynak": "merkez"
+  },
+  "Afyonkarahisar": {
+   "lat": 38.75806,
+   "lng": 30.53861,
+   "merkez": "Afyonkarahisar",
+   "kaynak": "merkez"
+  },
+  "Aksaray": {
+   "lat": 38.3686,
+   "lng": 34.0297,
+   "merkez": "Aksaray",
+   "kaynak": "merkez"
+  },
+  "Amasya": {
+   "lat": 40.65,
+   "lng": 35.83333,
+   "merkez": "Amasya",
+   "kaynak": "merkez"
+  },
+  "Ankara": {
+   "lat": 39.93576,
+   "lng": 32.83869,
+   "merkez": "Ankara",
+   "kaynak": "merkez"
+  },
+  "Antalya": {
+   "lat": 36.90812,
+   "lng": 30.69556,
+   "merkez": "Antalya",
+   "kaynak": "merkez"
+  },
+  "Ardahan": {
+   "lat": 41.11667,
+   "lng": 42.7,
+   "merkez": "Ardahan",
+   "kaynak": "merkez"
+  },
+  "Artvin": {
+   "lat": 41.18308,
+   "lng": 41.82874,
+   "merkez": "Artvin",
+   "kaynak": "merkez"
+  },
+  "Aydın": {
+   "lat": 37.84806,
+   "lng": 27.84528,
+   "merkez": "Aydın",
+   "kaynak": "merkez"
+  },
+  "Ağrı": {
+   "lat": 39.7225,
+   "lng": 43.05444,
+   "merkez": "Ağrı",
+   "kaynak": "merkez"
+  },
+  "Balıkesir": {
+   "lat": 39.65111,
+   "lng": 27.88417,
+   "merkez": "Balıkesir",
+   "kaynak": "merkez"
+  },
+  "Bartın": {
+   "lat": 41.63444,
+   "lng": 32.3375,
+   "merkez": "Bartın",
+   "kaynak": "merkez"
+  },
+  "Batman": {
+   "lat": 37.88333,
+   "lng": 41.13333,
+   "merkez": "Batman",
+   "kaynak": "merkez"
+  },
+  "Bayburt": {
+   "lat": 40.25464,
+   "lng": 40.226,
+   "merkez": "Bayburt",
+   "kaynak": "merkez"
+  },
+  "Bilecik": {
+   "lat": 40.14306,
+   "lng": 29.97917,
+   "merkez": "Bilecik",
+   "kaynak": "merkez"
+  },
+  "Bingöl": {
+   "lat": 39.04111,
+   "lng": 40.67583,
+   "merkez": "Bingöl",
+   "kaynak": "il"
+  },
+  "Bitlis": {
+   "lat": 38.4,
+   "lng": 42.11667,
+   "merkez": "Bitlis",
+   "kaynak": "merkez"
+  },
+  "Bolu": {
+   "lat": 40.73333,
+   "lng": 31.6,
+   "merkez": "Bolu",
+   "kaynak": "merkez"
+  },
+  "Burdur": {
+   "lat": 37.71667,
+   "lng": 30.28333,
+   "merkez": "Burdur",
+   "kaynak": "merkez"
+  },
+  "Bursa": {
+   "lat": 40.19133,
+   "lng": 29.08054,
+   "merkez": "Bursa",
+   "kaynak": "merkez"
+  },
+  "Denizli": {
+   "lat": 37.78333,
+   "lng": 29.09639,
+   "merkez": "Denizli",
+   "kaynak": "merkez"
+  },
+  "Diyarbakır": {
+   "lat": 37.91583,
+   "lng": 40.21889,
+   "merkez": "Diyarbakır",
+   "kaynak": "merkez"
+  },
+  "Düzce": {
+   "lat": 40.84167,
+   "lng": 31.15833,
+   "merkez": "Düzce",
+   "kaynak": "merkez"
+  },
+  "Edirne": {
+   "lat": 41.67304,
+   "lng": 26.57361,
+   "merkez": "Edirne",
+   "kaynak": "merkez"
+  },
+  "Elazığ": {
+   "lat": 38.66667,
+   "lng": 39.21667,
+   "merkez": "Elazığ",
+   "kaynak": "merkez"
+  },
+  "Erzincan": {
+   "lat": 39.74639,
+   "lng": 39.49139,
+   "merkez": "Erzincan",
+   "kaynak": "merkez"
+  },
+  "Erzurum": {
+   "lat": 39.90972,
+   "lng": 41.27556,
+   "merkez": "Erzurum",
+   "kaynak": "merkez"
+  },
+  "Eskişehir": {
+   "lat": 39.77667,
+   "lng": 30.52056,
+   "merkez": "Eskişehir",
+   "kaynak": "merkez"
+  },
+  "Gaziantep": {
+   "lat": 37.06278,
+   "lng": 37.37917,
+   "merkez": "Gaziantep",
+   "kaynak": "merkez"
+  },
+  "Giresun": {
+   "lat": 40.9,
+   "lng": 38.41667,
+   "merkez": "Giresun",
+   "kaynak": "merkez"
+  },
+  "Gümüşhane": {
+   "lat": 40.45972,
+   "lng": 39.47778,
+   "merkez": "Gümüşhane",
+   "kaynak": "merkez"
+  },
+  "Hakkari": {
+   "lat": 37.57444,
+   "lng": 43.74083,
+   "merkez": "Hakkâri",
+   "kaynak": "merkez"
+  },
+  "Hatay": {
+   "lat": 36.2025,
+   "lng": 36.16056,
+   "merkez": "Antakya",
+   "kaynak": "merkez"
+  },
+  "Isparta": {
+   "lat": 37.76667,
+   "lng": 30.55,
+   "merkez": "Isparta",
+   "kaynak": "merkez"
+  },
+  "Iğdır": {
+   "lat": 39.92371,
+   "lng": 44.045,
+   "merkez": "Iğdır",
+   "kaynak": "merkez"
+  },
+  "Kahramanmaraş": {
+   "lat": 37.5875,
+   "lng": 36.94528,
+   "merkez": "Kahramanmaraş",
+   "kaynak": "merkez"
+  },
+  "Karabük": {
+   "lat": 41.2,
+   "lng": 32.63333,
+   "merkez": "Karabük",
+   "kaynak": "merkez"
+  },
+  "Karaman": {
+   "lat": 37.18333,
+   "lng": 33.21667,
+   "merkez": "Karaman",
+   "kaynak": "merkez"
+  },
+  "Kars": {
+   "lat": 40.60778,
+   "lng": 43.09583,
+   "merkez": "Kars",
+   "kaynak": "merkez"
+  },
+  "Kastamonu": {
+   "lat": 41.38333,
+   "lng": 33.78333,
+   "merkez": "Kastamonu",
+   "kaynak": "merkez"
+  },
+  "Kayseri": {
+   "lat": 38.7225,
+   "lng": 35.4875,
+   "merkez": "Kayseri",
+   "kaynak": "merkez"
+  },
+  "Kilis": {
+   "lat": 36.71667,
+   "lng": 37.11667,
+   "merkez": "Kilis Merkez",
+   "kaynak": "merkez"
+  },
+  "Kocaeli": {
+   "lat": 40.77188,
+   "lng": 29.94978,
+   "merkez": "İzmit",
+   "kaynak": "merkez"
+  },
+  "Konya": {
+   "lat": 37.84705,
+   "lng": 32.5161,
+   "merkez": "Konya",
+   "kaynak": "merkez"
+  },
+  "Kütahya": {
+   "lat": 39.42417,
+   "lng": 29.98333,
+   "merkez": "Kütahya",
+   "kaynak": "merkez"
+  },
+  "Kırklareli": {
+   "lat": 41.73472,
+   "lng": 27.22528,
+   "merkez": "Kırklareli",
+   "kaynak": "merkez"
+  },
+  "Kırıkkale": {
+   "lat": 39.84167,
+   "lng": 33.51389,
+   "merkez": "Kırıkkale",
+   "kaynak": "merkez"
+  },
+  "Kırşehir": {
+   "lat": 39.145,
+   "lng": 34.16083,
+   "merkez": "Kırşehir",
+   "kaynak": "merkez"
+  },
+  "Malatya": {
+   "lat": 38.35062,
+   "lng": 38.3094,
+   "merkez": "Malatya",
+   "kaynak": "merkez"
+  },
+  "Manisa": {
+   "lat": 38.61194,
+   "lng": 27.42639,
+   "merkez": "Manisa",
+   "kaynak": "merkez"
+  },
+  "Mardin": {
+   "lat": 37.31306,
+   "lng": 40.735,
+   "merkez": "Mardin",
+   "kaynak": "merkez"
+  },
+  "Mersin": {
+   "lat": 36.8,
+   "lng": 34.61667,
+   "merkez": "Mersin",
+   "kaynak": "merkez"
+  },
+  "Muğla": {
+   "lat": 37.21667,
+   "lng": 28.36667,
+   "merkez": "Muğla",
+   "kaynak": "merkez"
+  },
+  "Muş": {
+   "lat": 38.73333,
+   "lng": 41.49111,
+   "merkez": "Muş",
+   "kaynak": "merkez"
+  },
+  "Nevşehir": {
+   "lat": 38.625,
+   "lng": 34.71222,
+   "merkez": "Nevşehir",
+   "kaynak": "merkez"
+  },
+  "Niğde": {
+   "lat": 37.96667,
+   "lng": 34.67917,
+   "merkez": "Niğde",
+   "kaynak": "merkez"
+  },
+  "Ordu": {
+   "lat": 40.98333,
+   "lng": 37.88333,
+   "merkez": "Ordu",
+   "kaynak": "merkez"
+  },
+  "Osmaniye": {
+   "lat": 37.075,
+   "lng": 36.25,
+   "merkez": "Osmaniye",
+   "kaynak": "merkez"
+  },
+  "Rize": {
+   "lat": 41.02482,
+   "lng": 40.51991,
+   "merkez": "Rize",
+   "kaynak": "merkez"
+  },
+  "Sakarya": {
+   "lat": 40.77625,
+   "lng": 30.40256,
+   "merkez": "Adapazarı",
+   "kaynak": "merkez"
+  },
+  "Samsun": {
+   "lat": 41.28667,
+   "lng": 36.33,
+   "merkez": "Samsun",
+   "kaynak": "merkez"
+  },
+  "Siirt": {
+   "lat": 37.84167,
+   "lng": 41.94583,
+   "merkez": "Siirt",
+   "kaynak": "merkez"
+  },
+  "Sinop": {
+   "lat": 42.02667,
+   "lng": 35.15111,
+   "merkez": "Sinop",
+   "kaynak": "merkez"
+  },
+  "Sivas": {
+   "lat": 39.75,
+   "lng": 37.01667,
+   "merkez": "Sivas",
+   "kaynak": "merkez"
+  },
+  "Tekirdağ": {
+   "lat": 40.98333,
+   "lng": 27.51667,
+   "merkez": "Tekirdağ",
+   "kaynak": "merkez"
+  },
+  "Tokat": {
+   "lat": 40.30972,
+   "lng": 36.55417,
+   "merkez": "Tokat",
+   "kaynak": "merkez"
+  },
+  "Trabzon": {
+   "lat": 41.005,
+   "lng": 39.7225,
+   "merkez": "Trabzon",
+   "kaynak": "merkez"
+  },
+  "Tunceli": {
+   "lat": 39.10611,
+   "lng": 39.54806,
+   "merkez": "Tunceli",
+   "kaynak": "merkez"
+  },
+  "Uşak": {
+   "lat": 38.68333,
+   "lng": 29.4,
+   "merkez": "Uşak",
+   "kaynak": "merkez"
+  },
+  "Van": {
+   "lat": 38.50194,
+   "lng": 43.41667,
+   "merkez": "Van",
+   "kaynak": "merkez"
+  },
+  "Yalova": {
+   "lat": 40.65556,
+   "lng": 29.275,
+   "merkez": "Yalova",
+   "kaynak": "merkez"
+  },
+  "Yozgat": {
+   "lat": 39.82083,
+   "lng": 34.80833,
+   "merkez": "Yozgat",
+   "kaynak": "merkez"
+  },
+  "Zonguldak": {
+   "lat": 41.45,
+   "lng": 31.78333,
+   "merkez": "Zonguldak",
+   "kaynak": "merkez"
+  },
+  "Çanakkale": {
+   "lat": 40.15,
+   "lng": 26.4,
+   "merkez": "Çanakkale",
+   "kaynak": "merkez"
+  },
+  "Çankırı": {
+   "lat": 40.64745,
+   "lng": 33.51449,
+   "merkez": "Çankırı",
+   "kaynak": "merkez"
+  },
+  "Çorum": {
+   "lat": 40.54889,
+   "lng": 34.95333,
+   "merkez": "Çorum",
+   "kaynak": "merkez"
+  },
+  "İstanbul": {
+   "lat": 41.01,
+   "lng": 28.96028,
+   "merkez": "İstanbul",
+   "kaynak": "merkez"
+  },
+  "İzmir": {
+   "lat": 38.41273,
+   "lng": 27.13838,
+   "merkez": "İzmir",
+   "kaynak": "merkez"
+  },
+  "Şanlıurfa": {
+   "lat": 37.15833,
+   "lng": 38.79167,
+   "merkez": "Şanlıurfa",
+   "kaynak": "merkez"
+  },
+  "Şırnak": {
+   "lat": 37.51639,
+   "lng": 42.46111,
+   "merkez": "Şırnak",
+   "kaynak": "merkez"
+  }
+ }
+}

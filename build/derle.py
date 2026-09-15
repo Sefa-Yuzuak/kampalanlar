@@ -253,6 +253,26 @@ def yaz(yol: str, icerik: str) -> None:
     hedef.write_text(icerik, encoding="utf-8")
 
 
+
+def il_merkez_bilgisi(alanlar: list[dict]) -> None:
+    """Alan sayfasina yol tarifi baglantisi ve il merkezine kus ucusu mesafe yazar.
+    Il merkezleri data/il_merkezleri.json (Wikidata, build/il_merkezleri.py).
+    Kaynagi olmayan ile mesafe YAZILMAZ; koordinati supheli alana da yazilmaz."""
+    yol = DATA / "il_merkezleri.json"
+    iller = json.loads(yol.read_text("utf-8")).get("iller", {}) if yol.exists() else {}
+    n = 0
+    for a in alanlar:
+        if a.get("lat") is None or a.get("koordinat_durum") == "supheli":
+            continue
+        a["yol_tarifi_url"] = f"https://www.google.com/maps/dir/?api=1&destination={a['lat']},{a['lng']}"
+        m = iller.get(a.get("il", ""))
+        if m:
+            a["merkez_km"] = round(km(a["lat"], a["lng"], m["lat"], m["lng"]))
+            a["merkez_ad"] = m.get("merkez") or a["il"]
+            n += 1
+    print(f"il merkezi mesafesi: {n} alan")
+
+
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     site = yukle("site.json")
@@ -278,6 +298,7 @@ def main() -> None:
         if (STATIC / ad).exists():
             shutil.copy(STATIC / ad, DIST / ad)
 
+    il_merkez_bilgisi(alanlar)
     kamp_izinli = [a for a in alanlar if a["kamp_izni_resmi"]]
     il_grup: dict[str, list[dict]] = {}
     for a in alanlar:
