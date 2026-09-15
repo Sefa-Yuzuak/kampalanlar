@@ -203,5 +203,10 @@ a.etiket:hover{border-color:var(--yesil-ac);color:var(--yesil)}
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .kart:hover{transform:none}
 }
-/* Alan sayfasindaki resmi tarife satiri (EK-1 kategorisi + EK-4 ucreti) */
-.durum .tarife-satir{margin:.7rem 0 0;padding-top:.7rem;border-top:1px dashed currentColor}
+/* Resmî tarife kutusu (EK-1 kategorisi + EK-4 ücreti). İzin durumundan bağımsız:
+   kategori 277 alanda eşleşiyor, izin yalnız 65 alanda var. */
+.tarife-kutu{margin:1.6rem 0;padding:1.1rem 1.2rem;border:1px solid var(--cizgi);
+  border-left:4px solid var(--yesil);border-radius:var(--r);background:var(--yesil-cok-ac)}
+.tarife-kutu h2{margin:0 0 .5rem;font-size:1.1rem}
+.tarife-kutu p{margin:0 0 .5rem}
+.tarife-kutu p:last-child{margin:0}

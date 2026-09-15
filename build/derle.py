@@ -34,7 +34,10 @@ STATIC = KOK / "static"
 TEMPLATES = KOK / "templates"
 
 TURLER = {
-    "milli_park": {"ad": "Milli Park", "cogul": "Milli Parklar", "slug": "milli-park",
+    # ad_tamlanan: resmî ve aranan biçim "... Milli Parkı"; başlıkta ve şema adında
+    # bu kullanılır. Düz "ad" filtre/etiket metinlerinde kalır.
+    "milli_park": {"ad": "Milli Park", "ad_tamlanan": "Milli Parkı",
+                   "cogul": "Milli Parklar", "slug": "milli-park",
                    "ikon": "🏔", "schema": "Park",
                    "aciklama": "2873 sayılı Milli Parklar Kanunu ile korunan, ulusal ve "
                                "uluslararası ölçekte değer taşıyan doğa parçaları."},
@@ -170,6 +173,36 @@ def hazirla(alanlar: list[dict], site: dict) -> list[dict]:
     return alanlar
 
 
+# ------------------------------------------------------------------- ad ve hâl eki
+_SESLI = "aeıioöuü"
+_KALIN = "aıou"
+_SERT = "fstkçşhp"
+
+
+def tam_ad(a: dict) -> str:
+    """Alanın yayımlanacak tam adı: tür için resmî tamlanan biçim kullanılır
+    ("Spil Dağı Milli Parkı", "Spil Dağı Milli Park" değil)."""
+    t = a["tur_bilgi"]
+    return f"{a['ad']} {t.get('ad_tamlanan') or t['ad']}"
+
+
+def bulunma(ad: str) -> str:
+    """Bulunma hâli. Ek f-string'e sabit yazılamaz: ünlüyle biten adda kaynaştırma
+    'n' gelir (Parkı -> Parkı'nda), sert ünsüzle bitende ek sertleşir
+    (Park -> Park'ta). Eskiden 50 sayfada "Milli Park'nda" çıkıyordu."""
+    son = ad[-1].lower() if ad else "a"
+    kalin = "a"
+    for h in reversed(ad.lower()):
+        if h in _SESLI:
+            kalin = h
+            break
+    ek_a = kalin in _KALIN
+    if son in _SESLI:
+        return f"{ad}'nd{'a' if ek_a else 'e'}"
+    d = "t" if son in _SERT else "d"
+    return f"{ad}'{d}{'a' if ek_a else 'e'}"
+
+
 # --------------------------------------------------------------------------- şema
 def kirintilar(site, *parcalar):
     ogeler = [{"@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": site["url"] + "/"}]
@@ -182,14 +215,20 @@ def alan_schema(a: dict, site: dict) -> dict:
     s = {
         "@context": "https://schema.org",
         "@type": ["Park", "TouristAttraction"],
-        "name": f"{a['ad']} {a['tur_bilgi']['ad']}",
+        "name": tam_ad(a),
         "url": site["url"] + a["url"],
-        "dateModified": site["veri_tarihi"],
+        "dateModified": a["dogrulama"],
         "description": ozet(a),
         "address": {"@type": "PostalAddress", "addressRegion": a["il"], "addressCountry": "TR"},
-        "isAccessibleForFree": False,
-        "publicAccess": True,
     }
+    # Ücretsiz DEĞİL iddiası ancak yayımlanmış bir tarife varsa kurulabilir:
+    # 306 alanda sayfada hiçbir ücret yazmıyor.
+    if a.get("tarife"):
+        s["isAccessibleForFree"] = False
+    # Tabiatı koruma alanları kamu kullanımına kapalı (sitenin kendi rehberi de
+    # böyle anlatıyor); 32 sayfada publicAccess=true yanlış iddiaydı.
+    if a["tur"] != "tabiati_koruma":
+        s["publicAccess"] = True
     if a.get("lat") is not None and a["koordinat_durum"] != "supheli":
         s["geo"] = {"@type": "GeoCoordinates", "latitude": a["lat"], "longitude": a["lng"]}
     if a.get("hektar"):
@@ -212,14 +251,29 @@ def sss_schema(sorular):
                             "acceptedAnswer": {"@type": "Answer", "text": s["c"]}} for s in sorular]}
 
 
+def kamp_ifadesi(a: dict) -> str:
+    """Kayıttaki kamp ifadesini OLDUĞU GİBİ döndürür ("çadırlı kamp/karavan
+    kullanımı" diye genellemez). DKMP kayıtları "Kamp", "Kampçılık",
+    "Gençlik Kampları" gibi farklı ifadeler kullanıyor ve hepsi çadırlı kamp
+    anlamına gelmiyor."""
+    metin = (a.get("rekreasyon") or "")
+    for parca in re.split(r"[,;-]", metin):
+        p = parca.strip()
+        if any(k in p.lower() for k in ("çadır", "karavan", "kamp")):
+            return f"“{p}”"
+    return "kamp kullanımı"
+
+
 def ozet(a: dict) -> str:
-    parcalar = [f"{a['ad']} {a['tur_bilgi']['ad']}, {a['il']} sınırlarında"]
+    parcalar = [f"{tam_ad(a)}, {a['il']} sınırlarında"]
     if a["hektar_yazi"]:
         parcalar.append(f"{a['hektar_yazi']} hektar")
-    if a["ilan_yili"]:
-        parcalar.append(f"{a['ilan_yili']} yılında ilan edildi")
     metin = ", ".join(parcalar) + ". "
-    metin += ("DKMP kayıtlarında bu alan için çadırlı kamp/karavan kullanımı belirtiliyor."
+    # Kaynağın KENDİ ifadesi yazılır. Eskiden izinli her alanda "çadırlı
+    # kamp/karavan" deniyordu; 5 alanın kaydında çadır da karavan da geçmiyor
+    # (Spil Dağı: "Dağcılık Sporları - Gençlik Kampları").
+    metin += (f"DKMP kayıtlarında bu alanın rekreasyon değeri arasında "
+              f"{kamp_ifadesi(a)} sayılıyor."
               if a["kamp_izni_resmi"] else
               "DKMP kayıtlarında bu alan için çadırlı kamp belirtilmiyor.")
     return metin
@@ -228,20 +282,20 @@ def ozet(a: dict) -> str:
 def alan_sss(a: dict) -> list[dict]:
     s = []
     if a["kamp_izni_resmi"]:
-        s.append({"s": f"{a['ad']} {a['tur_bilgi']['ad']}'nda kamp yapılabilir mi?",
+        s.append({"s": f"{bulunma(tam_ad(a))} kamp yapılabilir mi?",
                   "c": f"DKMP'nin 2025 korunan alan istatistiklerinde bu alanın rekreasyon "
-                       f"değeri arasında çadırlı kamp/karavan kullanımı sayılıyor. Kamp yalnızca "
+                       f"değeri arasında {kamp_ifadesi(a)} sayılıyor. Kamp yalnızca "
                        f"idarece belirlenen alanlarda ve ücret tarifesine göre yapılabilir; "
                        f"gitmeden önce alan müdürlüğünü arayın."})
     else:
-        s.append({"s": f"{a['ad']} {a['tur_bilgi']['ad']}'nda kamp yapılabilir mi?",
+        s.append({"s": f"{bulunma(tam_ad(a))} kamp yapılabilir mi?",
                   "c": f"DKMP'nin 2025 kayıtlarında bu alan için çadırlı kamp belirtilmiyor. "
                        f"6831 sayılı Orman Kanunu'nun 76/a maddesi, idarece belirlenen konak "
                        f"yerleri dışında gecelemeyi yasaklıyor. İzin durumunu alan müdürlüğünden "
                        f"teyit etmeden çadır kurmayın."})
     if a["tarife"] and a["kamp_izni_resmi"]:
         t = a["tarife"]
-        s.append({"s": f"{a['ad']} {a['tur_bilgi']['ad']}'nda kamp ücreti ne kadar?",
+        s.append({"s": f"{bulunma(tam_ad(a))} kamp ücreti ne kadar?",
                   "c": f"DKMP'nin 2026 tarifesinde bu alan {t['kategori']}. kategoride ve "
                        f"{t['grup']} bölge grubunda: 4 kişilik çadır için günlük yer kullanım "
                        f"bedeli {t['ucret']} TL. Su, duş ve atık hizmetlerini kapsayan ortak "
@@ -290,9 +344,20 @@ def main() -> None:
 
     alanlar = hazirla(yukle("korunan_alanlar.json"), site)
     tarife = yukle("tarife_2026.json", None)
+    kategori = yukle("kategori_2026.json", None)
+    # EK-1/EK-4 erişim tarihi: tarife taşıyan sayfaların damgası bundan gelir.
+    if kategori:
+        site["tarife_tarihi"] = (kategori.get("kaynak") or {}).get("erisim") or ""
     # EK-1 kategorisi + EK-4 ucreti: eslesen alanda sayfada kendi ucreti yazar.
-    eslesen = tarife_eslesme.eslestir(alanlar, yukle("kategori_2026.json", None), tarife)
+    eslesen = tarife_eslesme.eslestir(alanlar, kategori, tarife)
     print(f"tarife eslesmesi: {eslesen}/{len(alanlar)} alan")
+    # Damga eşleşmeden SONRA güncellenir: kategori/tarife verisi EK-1 erişim
+    # tarihinden geliyor ve site geneli veri_tarihi'nden daha yeni olabilir.
+    # hazirla() içinde yapılamaz, orada a["tarife"] henüz atanmamış olur.
+    if site.get("tarife_tarihi"):
+        for _a in alanlar:
+            if _a.get("tarife"):
+                _a["dogrulama"] = max(_a["dogrulama"], site["tarife_tarihi"])
     rehberler = yukle("rehberler.json", [])
     sayfalar = yukle("sayfalar.json", [])
 
@@ -368,7 +433,7 @@ def main() -> None:
 
     # il dizini + il sayfaları
     sayfa("/il/", "il_dizini.html", f"İllere Göre Kamp Alanları ve Korunan Alanlar",
-          f"81 ilde {len(alanlar)} korunan alan; hangi ilde kaç tanesinde resmen kamp izinli.",
+          f"{len(iller)} il ve il grubunda {len(alanlar)} korunan alan; hangi ilde kaç tanesinde resmen kamp izinli.",
           [kirintilar(site, ("İller", "/il/"))], oncelik="0.8",
           kirinti=[("İller", "/il/")])
     for il in iller:
@@ -397,7 +462,7 @@ def main() -> None:
     for a in alanlar:
         sss = alan_sss(a)
         sayfa(a["url"], "alan.html",
-              f"{a['ad_ayirt']} {a['tur_bilgi']['ad']}: Kamp İzni ve Konum",
+              f"{a['ad_ayirt']} {a['tur_bilgi'].get('ad_tamlanan') or a['tur_bilgi']['ad']}: Kamp İzni ve Konum",
               ozet(a),
               [alan_schema(a, site), sss_schema(sss),
                kirintilar(site, ("İller", "/il/"), (a["iller"][0], f"/il/{a['il_sluglari'][0]}/"),
@@ -503,9 +568,38 @@ def main() -> None:
     for a in kamp_izinli:
         llms.append(f"- [{a['ad']} {a['tur_bilgi']['ad']}]({site['url']}{a['url']}): "
                     f"{a['il']}, {a['hektar_yazi']} ha. {a['rekreasyon']}")
+    if tarife:
+        tum_ucret = [v for g in tarife["gruplar"] for v in g["ucret"].values()]
+        tarifeli = [a for a in alanlar if a.get("tarife")]
+        llms += ["", f"## Resmî çadır tarifesi {tarife['yil']}", "",
+                 f"DKMP'nin {tarife['yil']} tarifesinde 4 kişilik çadırın günlük yer kullanım "
+                 f"bedeli {min(tum_ucret)}-{max(tum_ucret)} TL arasında; tutar alanın "
+                 f"kategorisine (1/2/3) ve bölge grubuna göre değişir. "
+                 f"Tam tablo: {site['url']}/kamp-ucretleri-2026/",
+                 f"Kategorisi resmî EK-1 listesinden eşleşen alan sayısı: {len(tarifeli)}.", ""]
+        for a in tarifeli:
+            t = a["tarife"]
+            llms.append(f"- [{a['ad']} {a['tur_bilgi'].get('ad_tamlanan') or a['tur_bilgi']['ad']}]"
+                        f"({site['url']}{a['url']}): {a['il']}, {t['kategori']}. kategori, "
+                        f"{t['grup']}, günlük çadır {t['ucret']} TL")
+    llms += ["", "## İllere göre", ""]
+    for il in iller:
+        llms.append(f"- [{il['ad']}]({site['url']}{il['url']}): {len(il['alanlar'])} korunan alan, "
+                    f"{il['kamp']} tanesinde resmî kamp izni")
+    llms += ["", "## Türlere göre", ""]
+    for t in turler:
+        llms.append(f"- [{t['cogul']}]({site['url']}{t['slug_url']}): {len(t['alanlar'])} alan. "
+                    f"{t['aciklama']}")
     llms += ["", "## Rehberler", ""]
     for r in rehberler:
         llms.append(f"- [{r['baslik']}]({site['url']}{r['url']}): {r['ozet']}")
+    llms += ["", "## Kurallar", "",
+             "- Kaynakta olmayan bilgi boş bırakılır; ücret, izin ve olanak verisi tahminle "
+             "doldurulmaz.",
+             "- \"Resmî kamp izni\" DKMP'nin rekreasyon değeri sütununda kamp/çadır ifadesi "
+             "geçen alanları anlatır; alanın kendi ifadesi sayfasında yazılıdır.",
+             "- Tarife satırı bulunan sayfada kategori EK-1'den, tutar EK-4'ten gelir; "
+             "eşleşmeyen alanda tutar yazılmaz.", ""]
     (DIST / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
 
     supheli = sum(1 for a in alanlar if a["koordinat_durum"] == "supheli")

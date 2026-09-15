@@ -5,7 +5,7 @@
 
 <header class="alan-bas">
   <span class="tur-rozet">{{ a.tur_bilgi.ikon }} {{ a.tur_bilgi.ad }}</span>
-  <h1>{{ a.ad }}</h1>
+  <h1>{{ a.ad }} {{ a.tur_bilgi.ad_tamlanan or a.tur_bilgi.ad }}</h1>
   <p class="soluk">{{ a.il }}{% if a.bolge_mudurlugu %} · {{ a.bolge_mudurlugu }}. Bölge Müdürlüğü{% endif %}</p>
 </header>
 
@@ -18,12 +18,6 @@
     <p>DKMP'nin 2025 korunan alan istatistiklerinde bu alanın rekreasyon değeri arasında
     <em>{{ a.rekreasyon }}</em> geçiyor. Kamp yalnızca <strong>idarece belirlenen alanlarda</strong> ve
     <a href="/kamp-ucretleri-2026/">resmî ücret tarifesine</a> göre yapılabilir.</p>
-    {% if a.tarife %}
-    <p class="tarife-satir">Resmî tarife: <strong>{{ a.tarife.kategori }}. kategori</strong>,
-    {{ a.tarife.grup }} bölge grubu — 4 kişilik çadır için günlük
-    <strong>{{ a.tarife.ucret }} ₺</strong>. Ortak kullanım bedeli ayrıca alınabilir.
-    <a href="/kamp-ucretleri-2026/">Tarifenin tamamı</a></p>
-    {% endif %}
   </div>
 </div>
 {% else %}
@@ -39,13 +33,27 @@
 </div>
 {% endif %}
 
+{% if a.tarife %}
+<section class="tarife-kutu">
+  <h2>Resmî tarife (2026)</h2>
+  <p>DKMP'nin EK-1 listesinde bu alan <strong>{{ a.tarife.kategori }}. kategoride</strong> ve
+  <strong>{{ a.tarife.grup }}</strong> bölge grubunda. EK-4 tarifesine göre 4 kişilik çadır için
+  günlük yer kullanım bedeli <strong>{{ a.tarife.ucret }} ₺</strong>. Su, duş ve atık hizmetlerini
+  kapsayan ortak kullanım bedeli ayrıca alınabilir.
+  {% if not a.kamp_izni_resmi %}Tutar alanın resmî kategorisinden gelir; bu, alanda kamp izni
+  olduğu anlamına <strong>gelmez</strong> — DKMP kaydında bu alan için çadırlı kamp
+  belirtilmiyor.{% endif %}</p>
+  <p class="damga">Kaynak: {{ a.tarife.kaynak.ad }} ·
+  <a href="/kamp-ucretleri-2026/">tarifenin tamamı</a></p>
+</section>
+{% endif %}
+
 <section class="kunye">
   <h2>Künye</h2>
   <dl>
-    <div><dt>Tür</dt><dd>{{ a.tur_bilgi.ad }}</dd></div>
+    <div><dt>Tür</dt><dd><a href="/tur/{{ a.tur_bilgi.slug }}/">{{ a.tur_bilgi.ad }}</a></dd></div>
     <div><dt>İl</dt><dd>{% for il in a.iller %}<a href="/il/{{ a.il_sluglari[loop.index0] }}/">{{ il }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
     {% if a.hektar_yazi %}<div><dt>Alan</dt><dd>{{ a.hektar_yazi }} hektar</dd></div>{% endif %}
-    {% if a.ilan_tarihi %}<div><dt>İlan tarihi</dt><dd>{{ a.ilan_tarihi }}</dd></div>{% endif %}
     {% if a.plan_tarihi %}<div><dt>Gelişme planı</dt><dd>{{ a.plan_tarihi }}</dd></div>{% endif %}
     {% if a.rakim_m %}<div><dt>Ortalama rakım</dt><dd>{{ a.rakim_m|round|int }} m</dd></div>{% endif %}
     {% if a.dkmp_kodu %}<div><dt>DKMP kodu</dt><dd><code>{{ a.dkmp_kodu }}</code></dd></div>{% endif %}
@@ -110,9 +118,12 @@
 
 <section class="kaynakca">
   <h2>Kaynak</h2>
-  <p>Bu sayfadaki tür, alan, ilan tarihi, rakım ve rekreasyon bilgileri
+  <p>Bu sayfadaki tür, alan, rakım ve rekreasyon bilgileri
   <a href="{{ a.kaynak.url }}" rel="noopener" target="_blank">{{ a.kaynak.ad }}</a>
-  yayınından ({{ a.kaynak.dosya }}) alınmıştır.</p>
+  yayınından ({{ a.kaynak.dosya }}) alınmıştır.{% if a.tarife %} Kategori ve çadır bedeli
+  aynı kurumun 2026 ücret tarifesinden (EK-1 ve EK-4) gelir.{% endif %}
+  Sitenin kullandığı bütün kaynaklar ve kaynak veride bulduğumuz hatalar
+  <a href="/kaynaklar/">kaynaklar sayfasında</a>.</p>
   <p class="damga">Son doğrulama: {{ a.dogrulama }}</p>
 </section>
 
